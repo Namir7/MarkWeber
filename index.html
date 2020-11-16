@@ -1,1 +1,197 @@
-    
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Единый информатор</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a class="navigation__item-link" href="#">
+                            Реестры
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__item-link" href="#">
+                            Услуги и тарифы
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__item-link" href="#">
+                            Вопросы и ответы
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__item-link" href="#">
+                            О сервисе
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__item-link" href="#">
+                            Полезные статьи
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__item-link" href="#">
+                            Партнерам
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__item-link" href="#">
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="navigation__item navigation__item--how-to-use">
+                        <a class="navigation__item-link navigation__item-link--how-to-use" href="#">
+                            Как пользоваться сервисом
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu">
+                <div class="menu__logo">
+                    <a class="menu__logo-link" href="#">
+                        <img class="menu__logo-img" src="assets/img/svg/logo.svg" width="190px" height="52.16px"
+                            alt="Единый информатор">
+                    </a>
+                </div>
+                <form class="menu__search" method="GET">
+                    <div class="menu__search-category-select-wrapper">
+                        <select class="menu__search-category-select" size="1">
+                            <option class="menu__search-category-option">Каталог</option>
+                            <option class="menu__search-category-option">Категоря 1</option>
+                            <option class="menu__search-category-option">Категоря 2</option>
+                            <option class="menu__search-category-option">Категоря 3</option>
+                        </select>
+                    </div>
+                    <div class="menu__search-text-wrapper">
+                        <input class="menu__search-text" type="search" placeholder="Поиск по лотам">
+                    </div>
+                    <div class="menu__search-btn-wrapper">
+                        <input class="menu__search-btn" type="submit" value="">
+                    </div>
+                </form>
+                <ul class="menu__icons">
+                    <li class="menu__icon menu__icon--profile">
+                        <a class="menu__icon-link" href="#">
+                            <img class="menu__icon-img" src="assets/img/svg/menu__profile.svg" width="26px"
+                                heigth="26px" alt="Профиль">
+                            <p class="menu__icon-text">
+                                Профиль
+                            </p>
+                        </a>
+                    </li>
+                    <li class="menu__icon menu__icon--liked">
+                        <a class="menu__icon-link" href="#">
+                            <img class="menu__icon-img" src="assets/img/svg/menu__liked.svg" width="32px" heigth="32px"
+                                alt="Избранное">
+                            <span class="menu__icon--liked-likes">
+                                1
+                            </span>
+                            <p class="menu__icon-text">
+                                Избранное
+                            </p>
+                        </a>
+                    </li>
+                    <li class="menu__icon menu__icon--search-liked">
+                        <a class="menu__icon-link" href="#">
+                            <img class="menu__icon-img" src="assets/img/svg/menu__search-liked.svg" width="26px"
+                                heigth="26px" alt="Сохраненные поиски">
+                            <p class="menu__icon-text">
+                                Сохраненные поиски
+                            </p>
+                        </a>
+                    </li>
+                    <li class="menu__icon menu__icon--notifications">
+                        <a class="menu__icon-link" href="#">
+                            <img class="menu__icon-img" src="assets/img/svg/menu__notifications.svg" width="20px"
+                                heigth="26px" alt="Уведомления">
+                            <p class="menu__icon-text">
+                                Уведомления
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <h1 class="hidden">
+            Главная страница Единый информатор
+        </h1>
+        <section class="categories">
+            <div class="container-content">
+                <h2 class="categories__title">
+                    <span class="categories__title-accent">Все торги в одном месте —</span> банкротные и арестованные
+                    торги,
+                    имущество банков и лизинговых компаний
+                </h2>
+                <div class="categories__slider">
+
+                </div>
+                <div class="categories__main">
+                    <a class="categories__main-icon" href="#">
+                        <img class="categories__main-icon-img" src="assets/img/categories__transport.png" alt="Транспорт" width="105px" height="105px">
+                        <p class="categories__main-icon-name">
+                            Транспорт
+                        </p>
+                    </a>
+                    <a class="categories__main-icon" href="#">
+                        <img class="categories__main-icon-img" src="assets/img/categories__default.png" alt="Недвижимость" width="105px" height="105px">
+                        <p class="categories__main-icon-name">
+                            Недвижимость 
+                        </p>
+                    </a>
+                    <a class="categories__main-icon" href="#"> 
+                        <img class="categories__main-icon-img" src="assets/img/categories__default.png" alt="Земельные участки" width="105px" height="105px">
+                        <p class="categories__main-icon-name">
+                            Земельные участки 
+                        </p>
+                    </a>
+                    <a class="categories__main-icon" href="#">
+                        <img class="categories__main-icon-img" src="assets/img/categories__default.png" alt="Спецтехника" width="105px" height="105px">
+                        <p class="categories__main-icon-name">
+                            Спецтехника
+                        </p>
+                    </a>
+                    <a class="categories__main-icon" href="#">
+                        <img class="categories__main-icon-img" src="assets/img/categories__default.png" alt="Сельхоз-техника" width="105px" height="105px">
+                        <p class="categories__main-icon-name">
+                            Сельхоз-техника
+                        </p>
+                    </a>
+                    <a class="categories__main-icon" href="#">
+                        <img class="categories__main-icon-img" src="assets/img/categories__default.png" alt="Дебиторская задолженность" width="105px" height="105px">
+                        <p class="categories__main-icon-name">
+                            Дебиторская задолженность
+                        </p>
+                    </a>
+                    <a class="categories__main-icon" href="#">
+                        <img class="categories__main-icon-img" src="assets/img/categories__default.png" alt="Дебиторская задолженность" width="105px" height="105px">
+                        <p class="categories__main-icon-name">
+                            Дебиторская задолженность   
+                        </p>
+                    </a>
+                    <a class="categories__main-icon" href="#">
+                        <img class="categories__main-icon-img" src="assets/img/categories__default.png" alt="Готовый бизнес" width="105px" height="105px">
+                        <p class="categories__main-icon-name">
+                            Готовый бизнес
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="catalog">
+
+        </section>
+    </main>
+</body>
+
+</html>
