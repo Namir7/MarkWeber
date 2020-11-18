@@ -598,68 +598,8 @@ a {
   right: -9px;
 }
 
-.categories {
-  padding-bottom: 80px;
-  margin-bottom: 80px;
-  background-color: #ebf1f5;
-}
-
-.categories__title {
-  display: block;
-  width: fit-content;
-  font-size: 19px;
-  line-height: 20px;
-  font-weight: 500;
-  margin: 0 auto 32px;
-}
-
-.categories__title-accent {
-  font-weight: 700;
-}
-
-.categories__slider-wrapper {
-  width: 100%;
-  height: 250px;
-  margin-bottom: 65px;
-}
-
-.categories__main {
-  display: flex;
-  flex-direction: row;
-}
-
-.categories__main-wrapper {
-  display: block;
-  width: fit-content;
-  margin: 0 auto;
-}
-
-.categories__main-icon {
-  width: 105px;
-  margin-right: 65px;
-}
-
-.categories__main-icon-img {
-  margin-bottom: 19px;
-}
-
-.categories__main-icon-name {
-  font-size: 15px;
-  line-height: 18px;
-  font-weight: 700;
-  text-align: center;
-  width: fit-content;
-  display: block;
-  margin: 0 auto;
-}
-
-.categories__main-icon:last-child {
-  margin-right: 0px;
-}
-
 .promo {
   padding-bottom: 80px;
-  margin-bottom: 80px;
   background-color: #ebf1f5;
 }
 
@@ -679,13 +619,50 @@ a {
 .promo__slider-wrapper {
   width: 100%;
   height: 250px;
-  margin-bottom: 65px;
   overflow: hidden;
   position: relative;
 }
 
 .catalog {
   position: relative;
+}
+
+.catalog__bg {
+  position: absolute;
+  background-color: #ebf1f5;
+  width: 100%;
+  height: 254px;
+  z-index: -1;
+}
+
+.catalog .categories {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 80px;
+  padding-bottom: 80px;
+}
+
+.catalog .categories__icon {
+  width: 105px;
+  margin-right: 65px;
+}
+
+.catalog .categories__icon-img {
+  margin-bottom: 19px;
+}
+
+.catalog .categories__icon-name {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+}
+
+.catalog .categories__icon:last-child {
+  margin-right: 0px;
 }
 
 .catalog__card {
@@ -731,34 +708,33 @@ a {
   background-color: white;
   outline: none;
   position: absolute;
+  top: 50%;
 }
 
 .catalog__btn-left {
-  top: 410px;
   right: 96px;
 }
 
 .catalog__btn-left:hover {
-  top: 405px;
+  top: 49%;
 }
 
 .catalog__btn-right {
-  top: 410px;
   left: 96px;
 }
 
 .catalog__btn-right:hover {
-  top: 405px;
+  top: 49%;
 }
 
 .catalog__btn-change {
-  top: 140px;
+  top: 25%;
   right: 68px;
   border-radius: 50%;
 }
 
 .catalog__btn-change:hover {
-  top: 135px;
+  top: 24%;
 }
 
 .catalog::after {
