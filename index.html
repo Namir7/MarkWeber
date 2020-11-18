@@ -124,72 +124,501 @@
     </header>
     <main class="main">
         <h1 class="hidden">
-            Главная страница Единый информатор
+            Единый информатор
         </h1>
         <section class="categories">
-            <div class="container-content">
+            <div class="container">
                 <h2 class="categories__title">
                     <span class="categories__title-accent">Все торги в одном месте —</span> банкротные и арестованные
                     торги,
                     имущество банков и лизинговых компаний
                 </h2>
-                <div class="categories__slider">
-
+                <div class="categories__slider-wrapper">
+                    <div class="slider slider--promos categories__slider--promos">
+                        <button class="slider__arrow-left" type="button">
+                            <img class="slider__arrow-left-img" src="assets/img/svg/slider-arrow-left(with circle).svg"
+                                alt="left">
+                        </button>
+                        <button class="slider__arrow-right" type="button">
+                            <img class="slider__arrow-right-img"
+                                src="assets/img/svg/slider-arrow-right(with circle).svg" alt="left">
+                        </button>
+                        <div class="slider__item"
+                            style="background-image: url('assets/img/slider-item-image5.png'); background-size: cover;">
+                            <p class="slider__item-text" style="max-width:230px;">
+                                Автомобили премиум-класса со скидками
+                            </p>
+                            <a class="slider__item-link" href="#">
+                                Смотреть 235 лотов >
+                            </a>
+                        </div>
+                        <div class="slider__item"
+                            style="background-image: url('assets/img/slider-item-image2.png'); background-size: cover;">
+                            <p class="slider__item-text" style="max-width:230px;">
+                                Автомобили премиум-класса со скидками
+                            </p>
+                            <a class="slider__item-link" href="#">
+                                Смотреть 235 лотов >
+                            </a>
+                        </div>
+                        <div class="slider__item"
+                            style="background-image: url('assets/img/slider-item-image3.png'); background-size: cover;">
+                            <p class="slider__item-text" style="max-width:230px;">
+                                Сохраните поиск, чтобы получать оповещение о новых лотах
+                            </p>
+                            <a class="slider__item-link" href="#">
+                                Попробуйте бесплатно >
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="categories__main">
-                    <a class="categories__main-icon" href="#">
-                        <img class="categories__main-icon-img" src="assets/img/categories__transport.png" alt="Транспорт" width="105px" height="105px">
-                        <p class="categories__main-icon-name">
-                            Транспорт
-                        </p>
-                    </a>
-                    <a class="categories__main-icon" href="#">
-                        <img class="categories__main-icon-img" src="assets/img/categories__default.png" alt="Недвижимость" width="105px" height="105px">
-                        <p class="categories__main-icon-name">
-                            Недвижимость 
-                        </p>
-                    </a>
-                    <a class="categories__main-icon" href="#"> 
-                        <img class="categories__main-icon-img" src="assets/img/categories__default.png" alt="Земельные участки" width="105px" height="105px">
-                        <p class="categories__main-icon-name">
-                            Земельные участки 
-                        </p>
-                    </a>
-                    <a class="categories__main-icon" href="#">
-                        <img class="categories__main-icon-img" src="assets/img/categories__default.png" alt="Спецтехника" width="105px" height="105px">
-                        <p class="categories__main-icon-name">
-                            Спецтехника
-                        </p>
-                    </a>
-                    <a class="categories__main-icon" href="#">
-                        <img class="categories__main-icon-img" src="assets/img/categories__default.png" alt="Сельхоз-техника" width="105px" height="105px">
-                        <p class="categories__main-icon-name">
-                            Сельхоз-техника
-                        </p>
-                    </a>
-                    <a class="categories__main-icon" href="#">
-                        <img class="categories__main-icon-img" src="assets/img/categories__default.png" alt="Дебиторская задолженность" width="105px" height="105px">
-                        <p class="categories__main-icon-name">
-                            Дебиторская задолженность
-                        </p>
-                    </a>
-                    <a class="categories__main-icon" href="#">
-                        <img class="categories__main-icon-img" src="assets/img/categories__default.png" alt="Дебиторская задолженность" width="105px" height="105px">
-                        <p class="categories__main-icon-name">
-                            Дебиторская задолженность   
-                        </p>
-                    </a>
-                    <a class="categories__main-icon" href="#">
-                        <img class="categories__main-icon-img" src="assets/img/categories__default.png" alt="Готовый бизнес" width="105px" height="105px">
-                        <p class="categories__main-icon-name">
-                            Готовый бизнес
-                        </p>
-                    </a>
+                <div class="categories__main-wrapper">
+                    <div class="categories__main">
+                        <a class="categories__main-icon" href="#">
+                            <img class="categories__main-icon-img" src="assets/img/categories__transport.png"
+                                alt="Транспорт" width="105px" height="105px">
+                            <p class="categories__main-icon-name">
+                                Транспорт
+                            </p>
+                        </a>
+                        <a class="categories__main-icon" href="#">
+                            <img class="categories__main-icon-img" src="assets/img/categories__default.png"
+                                alt="Недвижимость" width="105px" height="105px">
+                            <p class="categories__main-icon-name">
+                                Недвижимость
+                            </p>
+                        </a>
+                        <a class="categories__main-icon" href="#">
+                            <img class="categories__main-icon-img" src="assets/img/categories__default.png"
+                                alt="Земельные участки" width="105px" height="105px">
+                            <p class="categories__main-icon-name">
+                                Земельные участки
+                            </p>
+                        </a>
+                        <a class="categories__main-icon" href="#">
+                            <img class="categories__main-icon-img" src="assets/img/categories__default.png"
+                                alt="Спецтехника" width="105px" height="105px">
+                            <p class="categories__main-icon-name">
+                                Спецтехника
+                            </p>
+                        </a>
+                        <a class="categories__main-icon" href="#">
+                            <img class="categories__main-icon-img" src="assets/img/categories__default.png"
+                                alt="Сельхоз-техника" width="105px" height="105px">
+                            <p class="categories__main-icon-name">
+                                Сельхоз-техника
+                            </p>
+                        </a>
+                        <a class="categories__main-icon" href="#">
+                            <img class="categories__main-icon-img" src="assets/img/categories__default.png"
+                                alt="Дебиторская задолженность" width="105px" height="105px">
+                            <p class="categories__main-icon-name">
+                                Дебиторская задолженность
+                            </p>
+                        </a>
+                        <a class="categories__main-icon" href="#">
+                            <img class="categories__main-icon-img" src="assets/img/categories__default.png"
+                                alt="Дебиторская задолженность" width="105px" height="105px">
+                            <p class="categories__main-icon-name">
+                                Дебиторская задолженность
+                            </p>
+                        </a>
+                        <a class="categories__main-icon" href="#">
+                            <img class="categories__main-icon-img" src="assets/img/categories__default.png"
+                                alt="Готовый бизнес" width="105px" height="105px">
+                            <p class="categories__main-icon-name">
+                                Готовый бизнес
+                            </p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="catalog">
-
+            <div class="container-content">
+                <button class="catalog__btn-left" type="button">
+                    <img class="catalog__btn-left-img" src="assets/img/svg/catalog__btn-left.svg" alt="left"
+                        width="64px" height="64px">
+                </button>
+                <div class="catalog__main">
+                    <div class="card card--new catalog__card">
+                        <button class="card__like-btn" type="button">
+                            <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                height="14px" alt="like">
+                        </button>
+                        <img class="card__img" src="assets/img/card-img-default.png" alt="photo" width="275px"
+                            height="205px">
+                        <div class="card__time-wrapper">
+                            <img class="card__time-img" src="assets/img/svg/card-time-img.svg" alt="time-circle">
+                            <p class="card__time-text">
+                                <span class="card__time-number">59</span> дней до подачи заявки
+                            </p>
+                        </div>
+                        <div class="card__price-wrapper">
+                            <p class="card__price card__price--down">
+                                900 000 ₽
+                            </p>
+                            <p class="card__subprice">
+                                250 000 000 ₽
+                            </p>
+                        </div>
+                        <p class="card__description">
+                            Торги по реализации имущества Шелевестера Максима Валерьевича: Транспортное средство Марка,
+                            модель - INFINIT...
+                        </p>
+                        <div class="card__info">
+                            Банкротные имущество • Аукцион
+                        </div>
+                    </div>
+                    <div class="card card--best-price catalog__card">
+                        <button class="card__like-btn" type="button">
+                            <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                height="14px" alt="like">
+                        </button>
+                        <img class="card__img" src="assets/img/card2-img.png" alt="photo" width="275px" height="205px">
+                        <div class="card__time-wrapper">
+                            <img class="card__time-img" src="assets/img/svg/card-time-img.svg" alt="time-circle">
+                            <p class="card__time-text">
+                                <span class="card__time-number">59</span> дней до подачи заявки
+                            </p>
+                        </div>
+                        <div class="card__price-wrapper">
+                            <p class="card__price card__price--up">
+                                306 000 ₽
+                            </p>
+                            <p class="card__subprice">
+                                250 000 000 ₽
+                            </p>
+                        </div>
+                        <p class="card__description">
+                            Земельный участок для индивидуального жилищного строительства, кадастровый №
+                            31:15:0204011:29
+                        </p>
+                        <div class="card__info">
+                            Имущество организаций и ИП • Аукцион
+                        </div>
+                    </div>
+                    <div class="card card--sold catalog__card">
+                        <button class="card__like-btn" type="button">
+                            <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                height="14px" alt="like">
+                        </button>
+                        <img class="card__img" src="assets/img/card3-img.png" alt="photo" width="275px" height="205px">
+                        <div class="card__time-wrapper">
+                            <img class="card__time-img" src="assets/img/svg/card-fulltime-img.svg" alt="time-circle">
+                            <p class="card__time-text">
+                                Торги окончены
+                            </p>
+                        </div>
+                        <div class="card__price-wrapper">
+                            <p class="card__price card__price--sold">
+                                Продано
+                            </p>
+                        </div>
+                        <p class="card__description card__description--sold">
+                            Автомобиль MITSUBISHI, модель
+                        </p>
+                        <div class="card__info">
+                            Банкротные торги
+                        </div>
+                    </div>
+                    <div class="card catalog__card">
+                        <button class="card__like-btn" type="button">
+                            <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                height="14px" alt="like">
+                        </button>
+                        <img class="card__img" src="assets/img/card-img-default.png" alt="photo" width="275px"
+                            height="205px">
+                        <div class="card__time-wrapper">
+                            <img class="card__time-img" src="assets/img/svg/card-time-img.svg" alt="time-circle">
+                            <p class="card__time-text">
+                                <span class="card__time-number">59</span> дней до подачи заявки
+                            </p>
+                        </div>
+                        <div class="card__price-wrapper">
+                            <p class="card__price card__price--down">
+                                900 000 ₽
+                            </p>
+                            <p class="card__subprice">
+                                250 000 000 ₽
+                            </p>
+                        </div>
+                        <p class="card__description">
+                            Торги по реализации имущества Шелевестера Максима Валерьевича: Транспортное средство Марка,
+                            модель - INFINIT...
+                        </p>
+                        <div class="card__info">
+                            Банкротные имущество • Аукцион
+                        </div>
+                    </div>
+                    <div class="card catalog__card">
+                        <button class="card__like-btn" type="button">
+                            <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                height="14px" alt="like">
+                        </button>
+                        <img class="card__img" src="assets/img/card-img-default.png" alt="photo" width="275px"
+                            height="205px">
+                        <div class="card__time-wrapper">
+                            <img class="card__time-img" src="assets/img/svg/card-time-img.svg" alt="time-circle">
+                            <p class="card__time-text">
+                                <span class="card__time-number">59</span> дней до подачи заявки
+                            </p>
+                        </div>
+                        <div class="card__price-wrapper">
+                            <p class="card__price card__price--down">
+                                900 000 ₽
+                            </p>
+                            <p class="card__subprice">
+                                250 000 000 ₽
+                            </p>
+                        </div>
+                        <p class="card__description">
+                            Торги по реализации имущества Шелевестера Максима Валерьевича: Транспортное средство Марка,
+                            модель - INFINIT...
+                        </p>
+                        <div class="card__info">
+                            Банкротные имущество • Аукцион
+                        </div>
+                    </div>
+                    <div class="card card--promo catalog__card">
+                        <a class="card-link--promo" href="#">
+                            <img class="card-img--promo" src="assets/img/card--promo.png" alt="more than 500 thousand"
+                                width="275px" height="350px">
+                        </a>
+                    </div>
+                    <div class="card catalog__card">
+                        <button class="card__like-btn" type="button">
+                            <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                height="14px" alt="like">
+                        </button>
+                        <img class="card__img" src="assets/img/card-img-default.png" alt="photo" width="275px"
+                            height="205px">
+                        <div class="card__time-wrapper">
+                            <img class="card__time-img" src="assets/img/svg/card-time-img.svg" alt="time-circle">
+                            <p class="card__time-text">
+                                <span class="card__time-number">59</span> дней до подачи заявки
+                            </p>
+                        </div>
+                        <div class="card__price-wrapper">
+                            <p class="card__price card__price--down">
+                                900 000 ₽
+                            </p>
+                            <p class="card__subprice">
+                                250 000 000 ₽
+                            </p>
+                        </div>
+                        <p class="card__description">
+                            Торги по реализации имущества Шелевестера Максима Валерьевича: Транспортное средство Марка,
+                            модель - INFINIT...
+                        </p>
+                        <div class="card__info">
+                            Банкротные имущество • Аукцион
+                        </div>
+                    </div>
+                    <div class="card catalog__card">
+                        <button class="card__like-btn" type="button">
+                            <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                height="14px" alt="like">
+                        </button>
+                        <img class="card__img" src="assets/img/card-img-default.png" alt="photo" width="275px"
+                            height="205px">
+                        <div class="card__time-wrapper">
+                            <img class="card__time-img" src="assets/img/svg/card-time-img.svg" alt="time-circle">
+                            <p class="card__time-text">
+                                <span class="card__time-number">59</span> дней до подачи заявки
+                            </p>
+                        </div>
+                        <div class="card__price-wrapper">
+                            <p class="card__price card__price--down">
+                                900 000 ₽
+                            </p>
+                            <p class="card__subprice">
+                                250 000 000 ₽
+                            </p>
+                        </div>
+                        <p class="card__description">
+                            Торги по реализации имущества Шелевестера Максима Валерьевича: Транспортное средство Марка,
+                            модель - INFINIT...
+                        </p>
+                        <div class="card__info">
+                            Банкротные имущество • Аукцион
+                        </div>
+                    </div>
+                </div>
+                <button class="catalog__btn-change" type="button">
+                    <img class="catalog__btn-change-img" src="assets/img/svg/catalog__btn-change.svg" alt="change"
+                        width="83px" height="83px">
+                </button>
+                <button class="catalog__btn-right" type="button">
+                    <img class="catalog__btn-right-img" src="assets/img/svg/catalog__btn-right.svg" alt="right"
+                        width="64px" height="64px">
+                </button>
+                <a class="catalog__go-to" href="#">
+                    Перейти в каталог
+                </a>
+            </div>
+        </section>
+        <section class="variety">
+            <div class="container-content">
+                <div class="variety-wrapper">
+                    <aside class="variety__variants-column">
+                        <button class="variety__variants-hight-level" type="button">
+                            Банкротное имущество
+                        </button>
+                        <button class="variety__variants-hight-level" type="button">
+                            Арестованное имущество
+                        </button>
+                        <button class="variety__variants-hight-level" type="button">
+                            Дебиторская задолженность
+                        </button>
+                        <button class="variety__variants-hight-level" type="button">
+                            Имущество организаций и ИП
+                        </button>
+                        <button class="variety__variants-hight-level" type="button">
+                            Кредитные портфели банков
+                        </button>
+                        <button class="variety__variants-hight-level" type="button">
+                            Имущество физлиц
+                        </button>
+                        <button class="variety__variants-hight-level" type="button">
+                            Готовый бизнес
+                        </button>
+                    </aside>
+                    <div class="variety__sliders-column">
+                        <div class="slider slider--promos variety__slider--promos">
+                            <button class="slider__arrow-left" type="button">
+                                <img class="slider__arrow-left-img" src="assets/img/svg/slider-arrow-left.svg"
+                                    alt="left">
+                            </button>
+                            <button class="slider__arrow-right" type="button">
+                                <img class="slider__arrow-right-img" src="assets/img/svg/slider-arrow-right.svg"
+                                    alt="left">
+                            </button>
+                            <div class="slider__item"
+                                style="background-image: url('assets/img/slider-item-image1.png'); background-size: cover;">
+                                <p class="slider__item-text" style="max-width:230px;">
+                                    Автомобили премиум-класса со скидками
+                                </p>
+                                <a class="slider__item-link" href="#">
+                                    Смотреть 235 лотов >
+                                </a>
+                            </div>
+                            <div class="slider__item"
+                                style="background-image: url('assets/img/slider-item-image1.png'); background-size: cover;">
+                                <p class="slider__item-text" style="max-width:230px;">
+                                    Автомобили премиум-класса со скидками
+                                </p>
+                                <a class="slider__item-link" href="#">
+                                    Смотреть 235 лотов >
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider slider--products variety__slider--products">
+                            <button class="slider__arrow-left" type="button">
+                                <img class="slider__arrow-left-img" src="assets/img/svg/slider-arrow-left.svg"
+                                    alt="left">
+                            </button>
+                            <button class="slider__arrow-right" type="button">
+                                <img class="slider__arrow-right-img" src="assets/img/svg/slider-arrow-right.svg"
+                                    alt="left">
+                            </button>
+                            <div class="card variety__card slider__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card-img-default.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-time-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        <span class="card__time-number">59</span> дней до подачи заявки
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--down">
+                                        900 000 ₽
+                                    </p>
+                                    <p class="card__subprice">
+                                        250 000 000 ₽
+                                    </p>
+                                </div>
+                                <p class="card__description">
+                                    Торги по реализации имущества Шелевестера Максима Валерьевича: Транспортное средство
+                                    Марка,
+                                    модель - INFINIT...
+                                </p>
+                                <div class="card__info">
+                                    Банкротные имущество • Аукцион
+                                </div>
+                            </div>
+                            <div class="card variety__card slider__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card-img-default.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-time-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        <span class="card__time-number">59</span> дней до подачи заявки
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--down">
+                                        900 000 ₽
+                                    </p>
+                                    <p class="card__subprice">
+                                        250 000 000 ₽
+                                    </p>
+                                </div>
+                                <p class="card__description">
+                                    Торги по реализации имущества Шелевестера Максима Валерьевича: Транспортное средство
+                                    Марка,
+                                    модель - INFINIT...
+                                </p>
+                                <div class="card__info">
+                                    Банкротные имущество • Аукцион
+                                </div>
+                            </div>
+                            <div class="card variety__card slider__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card-img-default.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-time-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        <span class="card__time-number">59</span> дней до подачи заявки
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--down">
+                                        900 000 ₽
+                                    </p>
+                                    <p class="card__subprice">
+                                        250 000 000 ₽
+                                    </p>
+                                </div>
+                                <p class="card__description">
+                                    Торги по реализации имущества Шелевестера Максима Валерьевича: Транспортное средство
+                                    Марка,
+                                    модель - INFINIT...
+                                </p>
+                                <div class="card__info">
+                                    Банкротные имущество • Аукцион
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>
