@@ -299,14 +299,18 @@ a {
 .slider3__track {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   width: fit-content;
+}
+
+.slider3__item {
+  width: fit-content;
+  height: fit-content;
 }
 
 .slider3__card {
   display: flex;
   flex-direction: column;
-  min-width: 445px;
-  height: 250px;
   margin-right: 65px;
 }
 
@@ -863,6 +867,7 @@ a {
 
 .variety__variants-column {
   margin-right: 30px;
+  min-width: 275px;
   display: flex;
   flex-direction: column;
 }
@@ -889,6 +894,13 @@ a {
 .variety__slider2-wrapper {
   width: 955px;
   height: 250px;
+  margin-bottom: 65px;
+  overflow: hidden;
+}
+
+.variety__slider3-wrapper {
+  width: 955px;
+  height: 345px;
   margin-bottom: 65px;
   overflow: hidden;
   position: relative;
