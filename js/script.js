@@ -1,8 +1,10 @@
-//sliders
 slider1();
 slider2();
 slider3();
 
+variety();
+
+//sliders
 function slider1() {
   //slider1
   const slider1Track = document.querySelector(".slider1__track");
@@ -176,7 +178,64 @@ function slider3() {
   });
 }
 
+//variety
+
+//open and close HTML variety's section menu(HTML:line 564)
+function variety() {
+  const variantsForm = document.querySelector("#variantsForm");
+  const hightLevelBtns = variantsForm.querySelectorAll("#hightLevelBtn");
+
+  let active = hightLevelBtns[0];
+
+  let openAnother = new CustomEvent("openAnother", {
+    bubbles: false,
+    cancelable: false,
+    detail: {
+      prev: undefined,
+      current: hightLevelBtns[0],
+    },
+  });
+
+  
+  //  event listener for form
+  variantsForm.addEventListener(
+    "openAnother",
+    (event) => {
+      //determine initial window offset
+      let windowOffset = window.pageYOffset;
+      
+      //  display and hide blicks
+      event.detail.current.nextElementSibling.style.display = "block";
+      event.detail.prev.nextElementSibling.style.display = "none";
+      
+      //change active, inactive attributes
+      event.detail.prev.dataset.active = "inactive";
+      event.detail.current.dataset.active = "active";
+      
+      //change window coordinations
+      window.scroll(0, windowOffset) 
+    },
+    false
+  );
+
+  // event listeners for buttons
+  for (let hightLevelBtn of hightLevelBtns) {
+    hightLevelBtn.addEventListener(
+      "click",
+      (eventClick) => {
+        if (hightLevelBtn.dataset.active === "inactive") {
+          //change next and prev elements
+          openAnother.detail.prev = openAnother.detail.current;
+          openAnother.detail.current = eventClick.currentTarget;
+
+          variantsForm.dispatchEvent(openAnother);
+        }
+      },
+      false
+    );
+  }
+}
 
 
-//variety__variants
-
+// window.scrollBy(0, event.detail.current.nextElementSibling.clientHeight);
+// window.scrollIntoView({ behavior: "smooth" });

@@ -566,30 +566,443 @@
                 <div class="variety-wrapper">
 
                     <aside class="variety__variants-column">
+                        <form class="variety__variants-form" id="variantsForm" action="POST">
 
-                        <button class="variety__variants-hight-level" type="button">
-                            Банкротное имущество
-                        </button>
+                            <!-- hight level -->
+                            <div class="variety__variants-hight-level">
+                                <button class="variety__variants-hight-level-btn btn1" id="hightLevelBtn" type="button"
+                                    data-active="active">
+                                    Банкротное имущество
+                                </button>
+                                <div class="variety__variants-low-level" style="">
 
-                        <button class="variety__variants-hight-level" type="button">
-                            Арестованное имущество
-                        </button>
-                        <button class="variety__variants-hight-level" type="button">
-                            Дебиторская задолженность
-                        </button>
-                        <button class="variety__variants-hight-level" type="button">
-                            Имущество организаций и ИП
-                        </button>
-                        <button class="variety__variants-hight-level" type="button">
-                            Кредитные портфели банков
-                        </button>
-                        <button class="variety__variants-hight-level" type="button">
-                            Имущество физлиц
-                        </button>
-                        <button class="variety__variants-hight-level" type="button">
-                            Готовый бизнес
-                        </button>
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant1-1"
+                                            type="radio" name="variants" value="1-1" checked>
+                                        <label class="variety__variants-low-level-item-label" for="variant1-1">Легковые
+                                            автомобили</label>
+                                    </div>
 
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant1-2"
+                                            type="radio" name="variants" value="1-2">
+                                        <label class="variety__variants-low-level-item-label" for="variant1-2">Грузовые
+                                            автомобили</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant1-3"
+                                            type="radio" name="variants" value="1-3">
+                                        <label class="variety__variants-low-level-item-label"
+                                            for="variant1-3">Спецтехника</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant1-4"
+                                            type="radio" name="variants" value="1-4">
+                                        <label class="variety__variants-low-level-item-label"
+                                            for="variant1-4">Коммерческая недвижимость</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant1-5"
+                                            type="radio" name="variants" value="1-5">
+                                        <label class="variety__variants-low-level-item-label" for="variant1-5">Жилая
+                                            недвижимость</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant1-6"
+                                            type="radio" name="variants" value="1-6">
+                                        <label class="variety__variants-low-level-item-label" for="variant1-6">Земельные
+                                            участки</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant1-7"
+                                            type="radio" name="variants" value="1-7">
+                                        <label class="variety__variants-low-level-item-label"
+                                            for="variant1-7">Промышленное оборудование</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant1-8"
+                                            type="radio" name="variants" value="1-8">
+                                        <label class="variety__variants-low-level-item-label"
+                                            for="variant1-8">Компьютеры и офисная техника</label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- hight level -->
+                            <div class="variety__variants-hight-level">
+                                <button class="variety__variants-hight-level-btn btn2" id="hightLevelBtn" type="button"
+                                    data-active="inactive">
+                                    Арестованное имущество
+                                </button>
+                                <div class="variety__variants-low-level" style="display:none;">
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant2-1"
+                                            type="radio" name="variants" value="2-1">
+                                        <label class="variety__variants-low-level-item-label" for="variant2-1">Категория
+                                            2-1</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant2-2"
+                                            type="radio" name="variants" value="2-2">
+                                        <label class="variety__variants-low-level-item-label" for="variant2-2">Категория
+                                            2-2</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant2-3"
+                                            type="radio" name="variants" value="2-3">
+                                        <label class="variety__variants-low-level-item-label" for="variant2-3">Категория
+                                            2-3</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant2-4"
+                                            type="radio" name="variants" value="2-4">
+                                        <label class="variety__variants-low-level-item-label" for="variant2-4">Категория
+                                            2-4</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant2-5"
+                                            type="radio" name="variants" value="2-5">
+                                        <label class="variety__variants-low-level-item-label" for="variant2-5">Категория
+                                            2-5</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant2-6"
+                                            type="radio" name="variants" value="2-6">
+                                        <label class="variety__variants-low-level-item-label" for="variant2-6">Категория
+                                            2-6</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant2-7"
+                                            type="radio" name="variants" value="2-7">
+                                        <label class="variety__variants-low-level-item-label" for="variant2-7">Категория
+                                            2-7</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant2-8"
+                                            type="radio" name="variants" value="2-8">
+                                        <label class="variety__variants-low-level-item-label" for="variant1-8">Категория
+                                            2-8</label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- hight level -->
+                            <div class="variety__variants-hight-level">
+                                <button class="variety__variants-hight-level-btn btn3" id="hightLevelBtn" type="button"
+                                    data-active="inactive">
+                                    Дебиторская задолженность
+                                </button>
+                                <div class="variety__variants-low-level" style="display:none;">
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant3-1"
+                                            type="radio" name="variants" value="3-1">
+                                        <label class="variety__variants-low-level-item-label" for="variant3-1">Категория
+                                            3-1</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant3-2"
+                                            type="radio" name="variants" value="3-2">
+                                        <label class="variety__variants-low-level-item-label" for="variant3-2">Категория
+                                            3-2</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant3-3"
+                                            type="radio" name="variants" value="3-3">
+                                        <label class="variety__variants-low-level-item-label" for="variant3-3">Категория
+                                            3-3</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant3-4"
+                                            type="radio" name="variants" value="3-4">
+                                        <label class="variety__variants-low-level-item-label" for="variant3-4">Категория
+                                            3-4</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant3-5"
+                                            type="radio" name="variants" value="3-5">
+                                        <label class="variety__variants-low-level-item-label" for="variant3-5">Категория
+                                            3-5</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant3-6"
+                                            type="radio" name="variants" value="3-6">
+                                        <label class="variety__variants-low-level-item-label" for="variant3-6">Категория
+                                            3-6</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant3-7"
+                                            type="radio" name="variants" value="3-7">
+                                        <label class="variety__variants-low-level-item-label" for="variant3-7">Категория
+                                            3-7</label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- hight level -->
+                            <div class="variety__variants-hight-level">
+                                <button class="variety__variants-hight-level-btn" id="hightLevelBtn" type="button"
+                                    data-active="inactive">
+                                    Имущество организаций и ИП
+                                </button>
+                                <div class="variety__variants-low-level" style="display:none;">
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant4-1"
+                                            type="radio" name="variants" value="4-1">
+                                        <label class="variety__variants-low-level-item-label" for="variant4-1">Категория
+                                            4-1</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant4-2"
+                                            type="radio" name="variants" value="4-2">
+                                        <label class="variety__variants-low-level-item-label" for="variant4-2">Категория
+                                            4-2</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant4-3"
+                                            type="radio" name="variants" value="4-3">
+                                        <label class="variety__variants-low-level-item-label" for="variant4-3">Категория
+                                            4-3</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant4-4"
+                                            type="radio" name="variants" value="4-4">
+                                        <label class="variety__variants-low-level-item-label" for="variant4-4">Категория
+                                            4-4</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant4-5"
+                                            type="radio" name="variants" value="4-5">
+                                        <label class="variety__variants-low-level-item-label" for="variant4-5">Категория
+                                            4-5</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant4-6"
+                                            type="radio" name="variants" value="4-6">
+                                        <label class="variety__variants-low-level-item-label" for="variant4-6">Категория
+                                            4-6</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant4-7"
+                                            type="radio" name="variants" value="4-7">
+                                        <label class="variety__variants-low-level-item-label" for="variant4-7">Категория
+                                            4-7</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                            <!-- hight level -->
+                            <div class="variety__variants-hight-level">
+                                <button class="variety__variants-hight-level-btn" id="hightLevelBtn" type="button"
+                                    data-active="inactive">
+                                    Кредитные портфели банков 
+                                </button>
+                                <div class="variety__variants-low-level" style="display:none;">
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id=variant5-1"
+                                            type="radio" name="variants" value="5-1">
+                                        <label class="variety__variants-low-level-item-label" for="variant5-1">Категория
+                                            5-1</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant5-2"
+                                            type="radio" name="variants" value="5-2">
+                                        <label class="variety__variants-low-level-item-label" for="variant5-2">Категория
+                                            5-2</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant5-3"
+                                            type="radio" name="variants" value="5-3">
+                                        <label class="variety__variants-low-level-item-label" for="variant5-3">Категория
+                                            5-3</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant5-4"
+                                            type="radio" name="variants" value="5-4">
+                                        <label class="variety__variants-low-level-item-label" for="variant5-4">Категория
+                                            5-4</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant5-5"
+                                            type="radio" name="variants" value="5-5">
+                                        <label class="variety__variants-low-level-item-label" for="variant5-5">Категория
+                                            5-5</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant5-6"
+                                            type="radio" name="variants" value="5-6">
+                                        <label class="variety__variants-low-level-item-label" for="variant5-6">Категория
+                                            5-6</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant5-7"
+                                            type="radio" name="variants" value="5-7">
+                                        <label class="variety__variants-low-level-item-label" for="variant5-7">Категория
+                                            5-7</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                            <!-- hight level -->
+                            <div class="variety__variants-hight-level">
+                                <button class="variety__variants-hight-level-btn" id="hightLevelBtn" type="button"
+                                    data-active="inactive">
+                                    Имущество физлиц
+                                </button>
+                                <div class="variety__variants-low-level" style="display:none;">
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id=variant6-1"
+                                            type="radio" name="variants" value="6-1">
+                                        <label class="variety__variants-low-level-item-label" for="variant6-1">Категория
+                                            6-1</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant6-2"
+                                            type="radio" name="variants" value="6-2">
+                                        <label class="variety__variants-low-level-item-label" for="variant6-2">Категория
+                                            6-2</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant6-3"
+                                            type="radio" name="variants" value="6-3">
+                                        <label class="variety__variants-low-level-item-label" for="variant6-3">Категория
+                                            6-3</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant6-4"
+                                            type="radio" name="variants" value="6-4">
+                                        <label class="variety__variants-low-level-item-label" for="variant6-4">Категория
+                                            6-4</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant6-5"
+                                            type="radio" name="variants" value="6-5">
+                                        <label class="variety__variants-low-level-item-label" for="variant6-5">Категория
+                                            6-5</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant6-6"
+                                            type="radio" name="variants" value="6-6">
+                                        <label class="variety__variants-low-level-item-label" for="variant6-6">Категория
+                                            6-6</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant6-7"
+                                            type="radio" name="variants" value="6-7">
+                                        <label class="variety__variants-low-level-item-label" for="variant6-7">Категория
+                                            6-7</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                            <!-- hight level -->
+                            <div class="variety__variants-hight-level">
+                                <button class="variety__variants-hight-level-btn" id="hightLevelBtn" type="button"
+                                    data-active="inactive">
+                                    Готовый бизнес
+                                </button>
+                                <div class="variety__variants-low-level" style="display:none;">
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id=variant7-1"
+                                            type="radio" name="variants" value="7-1">
+                                        <label class="variety__variants-low-level-item-label" for="variant7-1">Категория
+                                            7-1</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant7-2"
+                                            type="radio" name="variants" value="7-2">
+                                        <label class="variety__variants-low-level-item-label" for="variant7-2">Категория
+                                            7-2</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant7-3"
+                                            type="radio" name="variants" value="7-3">
+                                        <label class="variety__variants-low-level-item-label" for="variant7-3">Категория
+                                            7-3</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant7-4"
+                                            type="radio" name="variants" value="7-4">
+                                        <label class="variety__variants-low-level-item-label" for="variant7-4">Категория
+                                            7-4</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant7-5"
+                                            type="radio" name="variants" value="7-5">
+                                        <label class="variety__variants-low-level-item-label" for="variant7-5">Категория
+                                            7-5</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant7-6"
+                                            type="radio" name="variants" value="7-6">
+                                        <label class="variety__variants-low-level-item-label" for="variant7-6">Категория
+                                            7-6</label>
+                                    </div>
+
+                                    <div class="variety__variants-low-level-item">
+                                        <input class="variety__variants-low-level-item-input" id="variant7-7"
+                                            type="radio" name="variants" value="7-7">
+                                        <label class="variety__variants-low-level-item-label" for="variant7-7">Категория
+                                            7-7</label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </form>
                     </aside>
 
                     <div class="variety__sliders-column">
@@ -664,7 +1077,6 @@
                                     alt="left" width="10px" height="16px">
                             </button>
                         </div>
-
 
                         <!-- Slider 3 -->
                         <div class="variety__slider3-wrapper">
@@ -993,3 +1405,7 @@ git merge main -->
 
 <!-- sticky navbar -->
 <!-- https://www.youtube.com/watch?v=6HFpw5fcaD8 -->
+
+
+<!-- custom checkbox -->
+<!-- https://itchief.ru/html-and-css/styling-checkbox-and-radio -->

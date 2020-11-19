@@ -872,7 +872,7 @@ a {
   flex-direction: column;
 }
 
-.variety__variants-hight-level {
+.variety__variants-hight-level-btn {
   background-color: white;
   border: none;
   margin-bottom: 18px;
@@ -882,6 +882,81 @@ a {
   letter-spacing: 0em;
   text-align: left;
   outline: none;
+}
+
+.variety__variants-hight-level-btn:hover {
+  transform: translateX(-5px);
+}
+
+.variety__variants-low-level {
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.variety__variants-low-level-item {
+  margin-bottom: 25px;
+}
+
+.variety__variants-low-level-item-input {
+  margin: 0;
+  border: 3px solid black;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.variety__variants-low-level-item-input + label::before {
+  content: "";
+  visibility: hidden;
+  display: block;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 35%;
+  left: -15px;
+  border-radius: 50%;
+  background-color: #13b17c;
+}
+
+.variety__variants-low-level-item-input:checked + label::before {
+  visibility: visible;
+}
+
+.variety__variants-low-level-item-input:not(:disabled):active + label::before {
+  visibility: visible;
+}
+
+.variety__variants-low-level-item-input:not(:checked) + label::before {
+  visibility: hidden;
+}
+
+.variety__variants-low-level-item-label {
+  color: gray;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: relative;
+}
+
+.variety__variants-low-level-item-label::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 35%;
+  left: -15px;
+  border-radius: 50%;
+  background-color: #13b17c;
+}
+
+.variety__variants-low-level-item-label:hover {
+  color: #000;
 }
 
 .variety__sliders-column {
