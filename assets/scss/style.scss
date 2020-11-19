@@ -160,14 +160,86 @@ a {
 
 //sliders
 .slider {
+  //slider1
   &1 {
     &__track {
       display: flex;
       flex-direction: row;
 
       width: fit-content;
+    }
 
-      // transform: translateX(-180px);
+    &__item {
+      display: flex;
+      flex-direction: column;
+
+      min-width: 445px;
+      height: 250px;
+      margin-right: 65px;
+      &-title {
+        display: block;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 30px;
+        margin-left: 32px;
+        margin-bottom: auto;
+
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      &-link {
+        width: fit-content;
+        height: fit-content;
+        display: block;
+        margin-left: 32px;
+        margin-bottom: 35px;
+
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+
+    &__button {
+      &-left,
+      &-right {
+        border: none;
+        border-radius: 50%;
+        opacity: 0.8;
+        outline: none;
+
+        padding: 0px;
+        width: 64px;
+        height: 64px;
+
+        top: 40%;
+        position: absolute;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      &-left {
+        left: 0px;
+      }
+      &-right {
+        right: 0px;
+      }
+    }
+  }
+
+  //slider2
+  &2 {
+    &__track {
+      display: flex;
+      flex-direction: row;
+
+      width: fit-content;
     }
 
     &__item {
@@ -204,22 +276,68 @@ a {
         line-height: 18px;
         letter-spacing: 0em;
         text-align: left;
+        color: #13b17c;
       }
     }
 
-    &__arrow {
+    &__button {
       &-left,
       &-right {
         border: none;
-        border-radius: 50%;
         opacity: 0.8;
         outline: none;
+        background: none;
 
         padding: 0px;
-        width: 64px;
-        height: 64px;
+        width: fit-content;
+        height: fit-content;
 
-        top: 40%;
+        top: 115px;
+        position: absolute;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      &-left {
+        left: 0px;
+      }
+      &-right {
+        right: 0px;
+      }
+    }
+  }
+
+  //slider3
+  &3 {
+    &__track {
+      display: flex;
+      flex-direction: row;
+
+      width: fit-content;
+    }
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+
+      min-width: 445px;
+      height: 250px;
+      margin-right: 65px;
+    }
+
+    &__button {
+      &-left,
+      &-right {
+        border: none;
+        opacity: 0.8;
+        outline: none;
+        background: none;
+
+        padding: 0px;
+        width: fit-content;
+        height: fit-content;
+
+        top: 415px;
         position: absolute;
         &:hover {
           opacity: 1;
@@ -734,14 +852,15 @@ a {
 
 //main__variety
 .variety {
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
   &-wrapper {
     display: flex;
     flex-direction: row;
   }
   &__variants {
     &-column {
-      margin-right: 100px;
+      margin-right: 30px;
       display: flex;
       flex-direction: column;
     }
@@ -759,40 +878,25 @@ a {
       outline: none;
     }
   }
-  &__slider--promos {
+  //sliders column
+  &__sliders-column {
+    width: fit-content;
+    height: fit-content;
+    padding: 0 37px;
+    
+    position: relative;
+  }
+
+  &__slider2-wrapper {
     width: 955px;
     height: 250px;
+    
+    // padding: 0 35px;
+
     margin-bottom: 65px;
-    & .slider__arrow-left,
-    & .slider__arrow-right {
-      background-color: white;
-    }
-    & .slider__arrow-left {
-      top: 115px;
-      left: -45px;
-    }
-    & .slider__arrow-right {
-      top: 115px;
-      right: -45px;
-    }
-  }
-  &__slider--products {
-    width: 955px;
-    height: 345px;
 
-    & .slider__arrow-left,
-    & .slider__arrow-right {
-      background-color: white;
-    }
-
-    & .slider__arrow-left {
-      top: 115px;
-      left: -45px;
-    }
-    & .slider__arrow-right {
-      top: 115px;
-      right: -45px;
-    }
+    overflow: hidden;
+    position: relative;
   }
 }
 
