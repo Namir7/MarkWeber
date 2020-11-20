@@ -36,7 +36,7 @@ function slider1() {
   //  buttons listeners
   nextBtn1.addEventListener("click", () => {
     if (counter1 >= slider1Items.length - 3) return;
-    slider1Track.style.transition = "transform 700ms ease-in-out";
+    slider1Track.style.transition = "transform 1000ms ease-in-out";
     counter1++;
     slider1Track.style.transform = `translateX(${
       -size1 * counter1 - initialTranslate1
@@ -45,7 +45,7 @@ function slider1() {
 
   prevBtn1.addEventListener("click", () => {
     if (counter1 <= 0) return;
-    slider1Track.style.transition = "transform 700ms ease-in-out";
+    slider1Track.style.transition = "transform 1000ms ease-in-out";
     counter1--;
     slider1Track.style.transform = `translateX(${
       -size1 * counter1 - initialTranslate1
@@ -68,6 +68,32 @@ function slider1() {
       }px)`;
     }
   });
+
+  //  automatic switcher
+  switcher();
+
+  function switcher() {
+    let timerId = setInterval(() => {
+      nextBtn1.click();
+    }, 3000);
+
+    //  stop switch when hovered
+
+    for (let sliderElement of [slider1Track, prevBtn1, nextBtn1]) {
+      sliderElement.addEventListener("mouseover", () => {
+        setTimeout(() => {
+          clearInterval(timerId);
+        }, 0);
+      });
+    }
+
+    //  continue switch when not hovered
+    slider1Track.addEventListener("mouseout", () => {
+      timerId = setInterval(() => {
+        nextBtn1.click();
+      }, 1500);
+    });
+  }
 }
 
 function slider2() {
@@ -196,24 +222,23 @@ function variety() {
     },
   });
 
-  
   //  event listener for form
   variantsForm.addEventListener(
     "openAnother",
     (event) => {
       //determine initial window offset
       let windowOffset = window.pageYOffset;
-      
+
       //  display and hide blicks
       event.detail.current.nextElementSibling.style.display = "block";
       event.detail.prev.nextElementSibling.style.display = "none";
-      
+
       //change active, inactive attributes
       event.detail.prev.dataset.active = "inactive";
       event.detail.current.dataset.active = "active";
-      
+
       //change window coordinations
-      window.scroll(0, windowOffset) 
+      window.scroll(0, windowOffset);
     },
     false
   );
@@ -236,6 +261,66 @@ function variety() {
   }
 }
 
+//catalog
+
+//categories
+// window.addEventListener("keydown", (event) => {
+//   console.log(event);
+// });
+
+const catalog = document.querySelector(".catalog");
+const categoriesBtns = catalog.querySelectorAll("#categoriesBtn");
+
+//  disable TAB keydown for unnecessary elements
+{
+  const disableTABKeydownElements = document.querySelectorAll(
+    "button:not(#categoriesBtn), a, select, input"
+  );
+
+  Array.from(disableTABKeydownElements).forEach((disableTABKeydownElement) => {
+    disableTABKeydownElement.setAttribute("tabindex", -1);
+  });
+}
+
+//  change catalog
+// counter for tabIndex
+let tabIndexCounter = 0;
+// categoriesBtns[0].setAttribute("data-active", 'active');
+categoriesBtns[1].setAttribute("tabindex", 1);
+
+
+Array.from(categoriesBtns).forEach((categoriesBtn) => {
+  categoriesBtn.addEventListener(
+    "focus",
+    (event) => {
+      //scroll window
+      window.scroll({
+        top: 520,
+        // top: 790,
+        left: 0,
+        behavior: "smooth",
+      });
+
+      //infinitive TAB
+      tabIndexCounter++;
+      event.target.setAttribute("data-active", 'active');
+
+      if (tabIndexCounter % categoriesBtns.length === 0) {
+        categoriesBtns[0].setAttribute("tabindex", tabIndexCounter);
+      } else {
+        event.target.nextElementSibling.setAttribute(
+          "tabindex",
+          tabIndexCounter
+        );
+      }
+
+      
+      console.log(event.target);
+    },
+    false
+  );
+});
+
+//useful commemts
 
 // window.scrollBy(0, event.detail.current.nextElementSibling.clientHeight);
-// window.scrollIntoView({ behavior: "smooth" });

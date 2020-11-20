@@ -789,6 +789,15 @@ a {
     &__icon {
       width: 105px;
       margin-right: 65px;
+
+      border: none;
+      outline: none;
+      background: none;
+      
+      &[data-active='active']{
+        transform: scale(1.15);
+      }
+      
       &-img {
         margin-bottom: 19px;
       }
@@ -807,6 +816,18 @@ a {
     }
   }
 
+  &__main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+
+    margin-bottom: 48px;
+    max-width: 1295px;
+
+    text-align: left;
+  }
+
   &__card {
     margin-right: 65px;
     margin-bottom: 65px;
@@ -814,15 +835,46 @@ a {
       margin-right: 0px;
     }
   }
-  &__main {
-    margin-bottom: 48px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 1295px;
 
-    text-align: left;
+  &__btn {
+    &-left,
+    &-right,
+    &-change {
+      border: none;
+      background-color: white;
+      outline: none;
+
+      position: absolute;
+    }
+
+    &-left {
+      top: 50%;
+      right: -95px;
+      &:hover {
+        top: 49%;
+      }
+    }
+
+    &-right {
+      top: 50%;
+      left: -95px;
+      &:hover {
+        top: 49%;
+      }
+    }
+
+    &-change {
+      top: 7%;
+      right: -125px;
+
+      border-radius: 50%;
+      padding: 0;
+      &:hover {
+        top: 6%;
+      }
+    }
   }
+  
   &__go-to {
     display: block;
     width: 275px;
@@ -842,42 +894,6 @@ a {
 
     &:hover {
       transform: scale(1.15);
-    }
-  }
-
-  &__btn {
-    &-left,
-    &-right,
-    &-change {
-      border: none;
-      background-color: white;
-      outline: none;
-
-      position: absolute;
-      top: 50%;
-    }
-
-    &-left {
-      right: 96px;
-      &:hover {
-        top: 49%;
-      }
-    }
-
-    &-right {
-      left: 96px;
-      &:hover {
-        top: 49%;
-      }
-    }
-
-    &-change {
-      top: 25%;
-      right: 68px;
-      border-radius: 50%;
-      &:hover {
-        top: 24%;
-      }
     }
   }
 
@@ -908,22 +924,22 @@ a {
       flex-direction: column;
     }
     &-hight-level {
-        &-btn{
-          background-color: white;
-          border: none;
-          margin-bottom: 18px;
-    
-          font-size: 15px;
-          font-weight: 700;
-          line-height: 18px;
-          letter-spacing: 0em;
-          text-align: left;
-    
-          outline: none;
-          &:hover{
-            transform: translateX(-5px);
-          }
+      &-btn {
+        background-color: white;
+        border: none;
+        margin-bottom: 18px;
+
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        outline: none;
+        &:hover {
+          transform: translateX(-5px);
         }
+      }
     }
     &-low-level {
       padding-top: 20px;
@@ -941,8 +957,8 @@ a {
           position: absolute;
           z-index: -1;
           opacity: 0;
-          
-          &+label::before{
+
+          & + label::before {
             content: "";
             visibility: hidden;
 
@@ -957,16 +973,15 @@ a {
             border-radius: 50%;
             background-color: #13b17c;
           }
-          &:checked+label::before{
+          &:checked + label::before {
             visibility: visible;
           }
-          &:not(:disabled):active+label::before{
+          &:not(:disabled):active + label::before {
             visibility: visible;
           }
-          &:not(:checked)+label::before {
+          &:not(:checked) + label::before {
             visibility: hidden;
           }
-
         }
         &-label {
           color: gray;
@@ -992,7 +1007,7 @@ a {
             border-radius: 50%;
             background-color: #13b17c;
           }
-          &:hover{
+          &:hover {
             color: #000;
           }
         }
