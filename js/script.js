@@ -19,7 +19,8 @@ function slider1() {
   let counter1 = 1;
 
   //  size
-  const initialTranslate1 = 180;
+  const initialTranslate1 = 150;
+  // const initialTranslate1 = 180;
   const width1 = slider1Items[0].clientWidth;
   const marginRight1 = Number.parseFloat(
     window
@@ -71,7 +72,7 @@ function slider1() {
   });
 
   //  automatic switcher
-  switcher();
+  // switcher();
 
   function switcher() {
     let timerId = setInterval(() => {
@@ -272,21 +273,16 @@ function catalog() {
   const catalogNextBtn = catalog.querySelector("#catalogNextBtn");
   const catalogPrevBtn = catalog.querySelector("#catalogPrevBtn");
 
-  const catalogCategoriesBlocks = catalog.querySelectorAll(
-    ".catalog__main-category-content"
-  );
+  const catalogCategoriesBlocks = catalog.querySelectorAll("#categoryBlock");
 
-  const categoryContentBlocks = catalog.querySelectorAll(
-    ".catalog__main-category-content-block"
-  );
+  const categoryContentBlocks = catalog.querySelectorAll("#contentBlock");
   //disable
   //    TAB
   disableTAB();
   // empty categories
-  disableEmpty()
+  disableEmpty();
 
   //  listeners and events
-
   const changeActive = new CustomEvent("changeActive", {
     detail: {
       prev: null,
@@ -296,7 +292,7 @@ function catalog() {
 
   catalog.addEventListener("changeActive", (event) => {
     console.log(`catalog Listener: active category changed`);
-    smoothScroll();
+    // smoothScroll();
 
     setAndRemoveActiveAttributeToIcons();
 
@@ -348,7 +344,7 @@ function catalog() {
       let currentBlock = catalogCategoriesBlocks[
         currentCategoryNumber - 1
       ].querySelector(
-        `.catalog__main-category-content-block[data-blockNumber='${currentBlockNumber}']`
+        `#contentBlock[data-blockNumber='${currentBlockNumber}']`
       );
 
       currentBlock.setAttribute("data-active", "active");
@@ -362,7 +358,7 @@ function catalog() {
       let previousBlock = catalogCategoriesBlocks[
         previousCategoryNumber - 1
       ].querySelector(
-        `.catalog__main-category-content-block[data-blockNumber='${previousBlockNumber}']`
+        `#contentBlock[data-blockNumber='${previousBlockNumber}']`
       );
 
       previousBlock.removeAttribute("data-active");
@@ -374,9 +370,7 @@ function catalog() {
       );
       let currentBlock = catalogCategoriesBlocks[
         currentCategoryNumber - 1
-      ].querySelector(
-        `.catalog__main-category-content-block[data-blockNumber='1']`
-      );
+      ].querySelector(`#contentBlock[data-blockNumber='1']`);
 
       changeActiveCategoryBlock.detail.currentBlock = currentBlock;
       changeActiveCategoryBlock.detail.action = null;
@@ -487,10 +481,12 @@ function catalog() {
 
   function disableEmpty() {
     Array.from(categoriesBtns).forEach((categoriesBtn, categoriesBtnIndex) => {
-      let categoryElement = catalog.querySelector(`.catalog__main-category-content[data-categoryNumber='${categoriesBtnIndex + 1}']`); 
-      if (categoryElement.children.length === 0) categoriesBtn.setAttribute('disabled', 'disabled');
+      let categoryElement = catalog.querySelector(
+        `#categoryBlock[data-categoryNumber='${categoriesBtnIndex + 1}']`
+      );
+      if (categoryElement.children.length === 0)
+        categoriesBtn.setAttribute("disabled", "disabled");
       console.log(categoriesBtn);
     });
   }
-
 }
