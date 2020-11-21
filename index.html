@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    
     <header class="header">
         <div class="container">
             <nav class="navigation">
@@ -123,6 +124,7 @@
             </div>
         </div>
     </header>
+
     <main class="main">
 
         <h1 class="hidden">
@@ -279,7 +281,7 @@
             <div class="container-content">
                 <div class="catalog__categories categories">
 
-                    <button class="categories__icon" id="categoriesBtn" data-active="active">
+                    <button class="categories__icon" id="categoriesBtn" data-categoryNumber="1">
                         <img class="categories__icon-img" src="assets/img/categories__transport.png" alt="Транспорт"
                             width="105px" height="105px">
                         <p class="categories__icon-name">
@@ -287,7 +289,7 @@
                         </p>
                     </button>
 
-                    <button class="categories__icon" id="categoriesBtn">
+                    <button class="categories__icon" id="categoriesBtn" data-categoryNumber="2">
                         <img class="categories__icon-img" src="assets/img/categories__default.png" alt="Недвижимость"
                             width="105px" height="105px">
                         <p class="categories__icon-name">
@@ -295,7 +297,7 @@
                         </p>
                     </button>
 
-                    <button class="categories__icon" id="categoriesBtn">
+                    <button class="categories__icon" id="categoriesBtn" data-categoryNumber="3">
                         <img class="categories__icon-img" src="assets/img/categories__default.png"
                             alt="Земельные участки" width="105px" height="105px">
                         <p class="categories__icon-name">
@@ -303,7 +305,7 @@
                         </p>
                     </button>
 
-                    <button class="categories__icon" id="categoriesBtn">
+                    <button class="categories__icon" id="categoriesBtn" data-categoryNumber="4">
                         <img class="categories__icon-img" src="assets/img/categories__default.png" alt="Спецтехника"
                             width="105px" height="105px">
                         <p class="categories__icon-name">
@@ -311,7 +313,7 @@
                         </p>
                     </button>
 
-                    <button class="categories__icon" id="categoriesBtn">
+                    <button class="categories__icon" id="categoriesBtn" data-categoryNumber="5">
                         <img class="categories__icon-img" src="assets/img/categories__default.png" alt="Сельхоз-техника"
                             width="105px" height="105px">
                         <p class="categories__icon-name">
@@ -319,7 +321,7 @@
                         </p>
                     </button>
 
-                    <button class="categories__icon" id="categoriesBtn">
+                    <button class="categories__icon" id="categoriesBtn" data-categoryNumber="6">
                         <img class="categories__icon-img" src="assets/img/categories__default.png"
                             alt="Дебиторская задолженность" width="105px" height="105px">
                         <p class="categories__icon-name">
@@ -327,7 +329,7 @@
                         </p>
                     </button>
 
-                    <button class="categories__icon" id="categoriesBtn">
+                    <button class="categories__icon" id="categoriesBtn" data-categoryNumber="7">
                         <img class="categories__icon-img" src="assets/img/categories__default.png"
                             alt="Дебиторская задолженность" width="105px" height="105px">
                         <p class="categories__icon-name">
@@ -335,7 +337,7 @@
                         </p>
                     </button>
 
-                    <button class="categories__icon" id="categoriesBtn">
+                    <button class="categories__icon" id="categoriesBtn" data-categoryNumber="8">
                         <img class="categories__icon-img" src="assets/img/categories__default.png" alt="Готовый бизнес"
                             width="105px" height="105px">
                         <p class="categories__icon-name">
@@ -343,279 +345,1400 @@
                         </p>
                     </button>
                 </div>
+
                 <div class="catalog__main">
 
-                    
-                    <!-- card -->
-                    <div class="card card--new catalog__card">
-                        <button class="card__like-btn" type="button">
-                            <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
-                                height="14px" alt="like">
-                        </button>
-                        <img class="card__img" src="assets/img/card-img-default.png" alt="photo" width="275px"
-                            height="205px">
-                        <div class="card__time-wrapper">
-                            <img class="card__time-img" src="assets/img/svg/card-time-img.svg" alt="time-circle">
-                            <p class="card__time-text">
-                                <span class="card__time-number">59</span> дней до подачи заявки
-                            </p>
+                    <div class="catalog__main-category-content" data-categoryNumber="1">
+
+                        <div class="catalog__main-category-content-block" data-blockNumber="1">
+
+                            <!-- card transport-->
+                            <div class="card card--sold catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card3-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-fulltime-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        Торги окончены
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--sold">
+                                        Продано
+                                    </p>
+                                </div>
+                                <p class="card__description card__description--sold">
+                                    Автомобиль MITSUBISHI, модель
+                                </p>
+                                <div class="card__info">
+                                    Банкротные торги
+                                </div>
+                            </div>
+
+                            <!-- card transport -->
+                            <div class="card card--sold catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card3-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-fulltime-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        Торги окончены
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--sold">
+                                        Продано
+                                    </p>
+                                </div>
+                                <p class="card__description card__description--sold">
+                                    Автомобиль MITSUBISHI, модель
+                                </p>
+                                <div class="card__info">
+                                    Банкротные торги
+                                </div>
+                            </div>
+
+                            <!-- card transport -->
+                            <div class="card card--sold catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card3-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-fulltime-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        Торги окончены
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--sold">
+                                        Продано
+                                    </p>
+                                </div>
+                                <p class="card__description card__description--sold">
+                                    Автомобиль MITSUBISHI, модель
+                                </p>
+                                <div class="card__info">
+                                    Банкротные торги
+                                </div>
+                            </div>
+
+                            <!-- card promo -->
+                            <div class="card card--promo catalog__card">
+                                <a class="card-link--promo" href="#">
+                                    <img class="card-img--promo" src="assets/img/card--promo.png"
+                                        alt="more than 500 thousand" width="275px" height="350px">
+                                </a>
+                            </div>
+
+                            <!-- card transport-->
+                            <div class="card card--sold catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card3-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-fulltime-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        Торги окончены
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--sold">
+                                        Продано
+                                    </p>
+                                </div>
+                                <p class="card__description card__description--sold">
+                                    Автомобиль MITSUBISHI, модель
+                                </p>
+                                <div class="card__info">
+                                    Банкротные торги
+                                </div>
+                            </div>
+
+                            <!-- card transport -->
+                            <div class="card card--sold catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card3-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-fulltime-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        Торги окончены
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--sold">
+                                        Продано
+                                    </p>
+                                </div>
+                                <p class="card__description card__description--sold">
+                                    Автомобиль MITSUBISHI, модель
+                                </p>
+                                <div class="card__info">
+                                    Банкротные торги
+                                </div>
+                            </div>
+
+                            <!-- card transport -->
+                            <div class="card card--sold catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card3-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-fulltime-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        Торги окончены
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--sold">
+                                        Продано
+                                    </p>
+                                </div>
+                                <p class="card__description card__description--sold">
+                                    Автомобиль MITSUBISHI, модель
+                                </p>
+                                <div class="card__info">
+                                    Банкротные торги
+                                </div>
+                            </div>
+
+                            <!-- card transport -->
+                            <div class="card card--sold catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card3-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-fulltime-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        Торги окончены
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--sold">
+                                        Продано
+                                    </p>
+                                </div>
+                                <p class="card__description card__description--sold">
+                                    Автомобиль MITSUBISHI, модель
+                                </p>
+                                <div class="card__info">
+                                    Банкротные торги
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="card__price-wrapper">
-                            <p class="card__price card__price--down">
-                                900 000 ₽
-                            </p>
-                            <p class="card__subprice">
-                                250 000 000 ₽
-                            </p>
+
+                        <div class="catalog__main-category-content-block" data-blockNumber="2">
+
+                            <!-- card promo -->
+                            <div class="card card--promo catalog__card">
+                                <a class="card-link--promo" href="#">
+                                    <img class="card-img--promo" src="assets/img/card--promo.png"
+                                        alt="more than 500 thousand" width="275px" height="350px">
+                                </a>
+                            </div>
+
+                            <!-- card transport -->
+                            <div class="card card--sold catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card3-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-fulltime-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        Торги окончены
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--sold">
+                                        Продано
+                                    </p>
+                                </div>
+                                <p class="card__description card__description--sold">
+                                    Автомобиль MITSUBISHI, модель
+                                </p>
+                                <div class="card__info">
+                                    Банкротные торги
+                                </div>
+                            </div>
+
+                            <!-- card transport -->
+                            <div class="card card--sold catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card3-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-fulltime-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        Торги окончены
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--sold">
+                                        Продано
+                                    </p>
+                                </div>
+                                <p class="card__description card__description--sold">
+                                    Автомобиль MITSUBISHI, модель
+                                </p>
+                                <div class="card__info">
+                                    Банкротные торги
+                                </div>
+                            </div>
+
+                            <!-- card transport -->
+                            <div class="card card--sold catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card3-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-fulltime-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        Торги окончены
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--sold">
+                                        Продано
+                                    </p>
+                                </div>
+                                <p class="card__description card__description--sold">
+                                    Автомобиль MITSUBISHI, модель
+                                </p>
+                                <div class="card__info">
+                                    Банкротные торги
+                                </div>
+                            </div>
+
+                            <!-- card transport-->
+                            <div class="card card--sold catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card3-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-fulltime-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        Торги окончены
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--sold">
+                                        Продано
+                                    </p>
+                                </div>
+                                <p class="card__description card__description--sold">
+                                    Автомобиль MITSUBISHI, модель
+                                </p>
+                                <div class="card__info">
+                                    Банкротные торги
+                                </div>
+                            </div>
+
+                            <!-- card transport -->
+                            <div class="card card--sold catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card3-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-fulltime-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        Торги окончены
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--sold">
+                                        Продано
+                                    </p>
+                                </div>
+                                <p class="card__description card__description--sold">
+                                    Автомобиль MITSUBISHI, модель
+                                </p>
+                                <div class="card__info">
+                                    Банкротные торги
+                                </div>
+                            </div>
+
+                            <!-- card transport -->
+                            <div class="card card--sold catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card3-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-fulltime-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        Торги окончены
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--sold">
+                                        Продано
+                                    </p>
+                                </div>
+                                <p class="card__description card__description--sold">
+                                    Автомобиль MITSUBISHI, модель
+                                </p>
+                                <div class="card__info">
+                                    Банкротные торги
+                                </div>
+                            </div>
+
+                            <!-- card transport -->
+                            <div class="card card--sold catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card3-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-fulltime-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        Торги окончены
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--sold">
+                                        Продано
+                                    </p>
+                                </div>
+                                <p class="card__description card__description--sold">
+                                    Автомобиль MITSUBISHI, модель
+                                </p>
+                                <div class="card__info">
+                                    Банкротные торги
+                                </div>
+                            </div>
+
                         </div>
-                        <p class="card__description">
-                            Торги по реализации имущества Шелевестера Максима Валерьевича: Транспортное средство Марка,
-                            модель - INFINIT...
-                        </p>
-                        <div class="card__info">
-                            Банкротные имущество • Аукцион
+
+                        <div class="catalog__main-category-content-block" data-blockNumber="3">
+
+                            <!-- card transport-->
+                            <div class="card card--sold catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card3-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-fulltime-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        Торги окончены
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--sold">
+                                        Продано
+                                    </p>
+                                </div>
+                                <p class="card__description card__description--sold">
+                                    Автомобиль MITSUBISHI, модель
+                                </p>
+                                <div class="card__info">
+                                    Банкротные торги
+                                </div>
+                            </div>
+
+                            <!-- card transport -->
+                            <div class="card card--sold catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card3-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-fulltime-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        Торги окончены
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--sold">
+                                        Продано
+                                    </p>
+                                </div>
+                                <p class="card__description card__description--sold">
+                                    Автомобиль MITSUBISHI, модель
+                                </p>
+                                <div class="card__info">
+                                    Банкротные торги
+                                </div>
+                            </div>
+
+                            <!-- card transport -->
+                            <div class="card card--sold catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card3-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-fulltime-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        Торги окончены
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--sold">
+                                        Продано
+                                    </p>
+                                </div>
+                                <p class="card__description card__description--sold">
+                                    Автомобиль MITSUBISHI, модель
+                                </p>
+                                <div class="card__info">
+                                    Банкротные торги
+                                </div>
+                            </div>
+
+                            <!-- card transport -->
+                            <div class="card card--sold catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card3-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-fulltime-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        Торги окончены
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--sold">
+                                        Продано
+                                    </p>
+                                </div>
+                                <p class="card__description card__description--sold">
+                                    Автомобиль MITSUBISHI, модель
+                                </p>
+                                <div class="card__info">
+                                    Банкротные торги
+                                </div>
+                            </div>
+
                         </div>
+
                     </div>
 
-                    <!-- card -->
-                    <div class="card card--best-price catalog__card">
-                        <button class="card__like-btn" type="button">
-                            <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
-                                height="14px" alt="like">
-                        </button>
-                        <img class="card__img" src="assets/img/card2-img.png" alt="photo" width="275px" height="205px">
-                        <div class="card__time-wrapper">
-                            <img class="card__time-img" src="assets/img/svg/card-time-img.svg" alt="time-circle">
-                            <p class="card__time-text">
-                                <span class="card__time-number">59</span> дней до подачи заявки
-                            </p>
+                    <div class="catalog__main-category-content" data-categoryNumber="2">
+
+                        <div class="catalog__main-category-content-block" data-blockNumber="1">
+
+                            <!-- card real estate-->
+                            <div class="card card--best-price catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card2-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-time-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        <span class="card__time-number">59</span> дней до подачи заявки
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--up">
+                                        306 000 ₽
+                                    </p>
+                                    <p class="card__subprice">
+                                        250 000 000 ₽
+                                    </p>
+                                </div>
+                                <p class="card__description">
+                                    Земельный участок для индивидуального жилищного строительства, кадастровый №
+                                    31:15:0204011:29
+                                </p>
+                                <div class="card__info">
+                                    Имущество организаций и ИП • Аукцион
+                                </div>
+                            </div>
+
+
+                            <!-- card real estate-->
+                            <div class="card card--best-price catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card2-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-time-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        <span class="card__time-number">59</span> дней до подачи заявки
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--up">
+                                        306 000 ₽
+                                    </p>
+                                    <p class="card__subprice">
+                                        250 000 000 ₽
+                                    </p>
+                                </div>
+                                <p class="card__description">
+                                    Земельный участок для индивидуального жилищного строительства, кадастровый №
+                                    31:15:0204011:29
+                                </p>
+                                <div class="card__info">
+                                    Имущество организаций и ИП • Аукцион
+                                </div>
+                            </div>
+
+                            <!-- card promo -->
+                            <div class="card card--promo catalog__card">
+                                <a class="card-link--promo" href="#">
+                                    <img class="card-img--promo" src="assets/img/card--promo.png"
+                                        alt="more than 500 thousand" width="275px" height="350px">
+                                </a>
+                            </div>
+
+                            <!-- card real estate-->
+                            <div class="card card--best-price catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card2-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-time-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        <span class="card__time-number">59</span> дней до подачи заявки
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--up">
+                                        306 000 ₽
+                                    </p>
+                                    <p class="card__subprice">
+                                        250 000 000 ₽
+                                    </p>
+                                </div>
+                                <p class="card__description">
+                                    Земельный участок для индивидуального жилищного строительства, кадастровый №
+                                    31:15:0204011:29
+                                </p>
+                                <div class="card__info">
+                                    Имущество организаций и ИП • Аукцион
+                                </div>
+                            </div>
+
+                            <!-- card real estate-->
+                            <div class="card card--best-price catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card2-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-time-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        <span class="card__time-number">59</span> дней до подачи заявки
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--up">
+                                        306 000 ₽
+                                    </p>
+                                    <p class="card__subprice">
+                                        250 000 000 ₽
+                                    </p>
+                                </div>
+                                <p class="card__description">
+                                    Земельный участок для индивидуального жилищного строительства, кадастровый №
+                                    31:15:0204011:29
+                                </p>
+                                <div class="card__info">
+                                    Имущество организаций и ИП • Аукцион
+                                </div>
+                            </div>
+
+                            <!-- card real estate-->
+                            <div class="card card--best-price catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card2-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-time-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        <span class="card__time-number">59</span> дней до подачи заявки
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--up">
+                                        306 000 ₽
+                                    </p>
+                                    <p class="card__subprice">
+                                        250 000 000 ₽
+                                    </p>
+                                </div>
+                                <p class="card__description">
+                                    Земельный участок для индивидуального жилищного строительства, кадастровый №
+                                    31:15:0204011:29
+                                </p>
+                                <div class="card__info">
+                                    Имущество организаций и ИП • Аукцион
+                                </div>
+                            </div>
+
+                            <!-- card real estate-->
+                            <div class="card card--best-price catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card2-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-time-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        <span class="card__time-number">59</span> дней до подачи заявки
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--up">
+                                        306 000 ₽
+                                    </p>
+                                    <p class="card__subprice">
+                                        250 000 000 ₽
+                                    </p>
+                                </div>
+                                <p class="card__description">
+                                    Земельный участок для индивидуального жилищного строительства, кадастровый №
+                                    31:15:0204011:29
+                                </p>
+                                <div class="card__info">
+                                    Имущество организаций и ИП • Аукцион
+                                </div>
+                            </div>
+
+                            <!-- card real estate-->
+                            <div class="card card--best-price catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card2-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-time-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        <span class="card__time-number">59</span> дней до подачи заявки
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--up">
+                                        306 000 ₽
+                                    </p>
+                                    <p class="card__subprice">
+                                        250 000 000 ₽
+                                    </p>
+                                </div>
+                                <p class="card__description">
+                                    Земельный участок для индивидуального жилищного строительства, кадастровый №
+                                    31:15:0204011:29
+                                </p>
+                                <div class="card__info">
+                                    Имущество организаций и ИП • Аукцион
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="card__price-wrapper">
-                            <p class="card__price card__price--up">
-                                306 000 ₽
-                            </p>
-                            <p class="card__subprice">
-                                250 000 000 ₽
-                            </p>
+
+                        <div class="catalog__main-category-content-block" data-blockNumber="2">
+
+                            <!-- card real estate-->
+                            <div class="card card--best-price catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card2-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-time-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        <span class="card__time-number">59</span> дней до подачи заявки
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--up">
+                                        306 000 ₽
+                                    </p>
+                                    <p class="card__subprice">
+                                        250 000 000 ₽
+                                    </p>
+                                </div>
+                                <p class="card__description">
+                                    Земельный участок для индивидуального жилищного строительства, кадастровый №
+                                    31:15:0204011:29
+                                </p>
+                                <div class="card__info">
+                                    Имущество организаций и ИП • Аукцион
+                                </div>
+                            </div>
+
+                            <!-- card real estate-->
+                            <div class="card card--best-price catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card2-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-time-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        <span class="card__time-number">59</span> дней до подачи заявки
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--up">
+                                        306 000 ₽
+                                    </p>
+                                    <p class="card__subprice">
+                                        250 000 000 ₽
+                                    </p>
+                                </div>
+                                <p class="card__description">
+                                    Земельный участок для индивидуального жилищного строительства, кадастровый №
+                                    31:15:0204011:29
+                                </p>
+                                <div class="card__info">
+                                    Имущество организаций и ИП • Аукцион
+                                </div>
+                            </div>
+
+                            <!-- card real estate-->
+                            <div class="card card--best-price catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card2-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-time-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        <span class="card__time-number">59</span> дней до подачи заявки
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--up">
+                                        306 000 ₽
+                                    </p>
+                                    <p class="card__subprice">
+                                        250 000 000 ₽
+                                    </p>
+                                </div>
+                                <p class="card__description">
+                                    Земельный участок для индивидуального жилищного строительства, кадастровый №
+                                    31:15:0204011:29
+                                </p>
+                                <div class="card__info">
+                                    Имущество организаций и ИП • Аукцион
+                                </div>
+                            </div>
+
+                            <!-- card real estate-->
+                            <div class="card card--best-price catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card2-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-time-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        <span class="card__time-number">59</span> дней до подачи заявки
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--up">
+                                        306 000 ₽
+                                    </p>
+                                    <p class="card__subprice">
+                                        250 000 000 ₽
+                                    </p>
+                                </div>
+                                <p class="card__description">
+                                    Земельный участок для индивидуального жилищного строительства, кадастровый №
+                                    31:15:0204011:29
+                                </p>
+                                <div class="card__info">
+                                    Имущество организаций и ИП • Аукцион
+                                </div>
+                            </div>
+
+                            <!-- card promo -->
+                            <div class="card card--promo catalog__card">
+                                <a class="card-link--promo" href="#">
+                                    <img class="card-img--promo" src="assets/img/card--promo.png"
+                                        alt="more than 500 thousand" width="275px" height="350px">
+                                </a>
+                            </div>
+
+                            <!-- card real estate-->
+                            <div class="card card--best-price catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card2-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-time-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        <span class="card__time-number">59</span> дней до подачи заявки
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--up">
+                                        306 000 ₽
+                                    </p>
+                                    <p class="card__subprice">
+                                        250 000 000 ₽
+                                    </p>
+                                </div>
+                                <p class="card__description">
+                                    Земельный участок для индивидуального жилищного строительства, кадастровый №
+                                    31:15:0204011:29
+                                </p>
+                                <div class="card__info">
+                                    Имущество организаций и ИП • Аукцион
+                                </div>
+                            </div>
+
+                            <!-- card real estate-->
+                            <div class="card card--best-price catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card2-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-time-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        <span class="card__time-number">59</span> дней до подачи заявки
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--up">
+                                        306 000 ₽
+                                    </p>
+                                    <p class="card__subprice">
+                                        250 000 000 ₽
+                                    </p>
+                                </div>
+                                <p class="card__description">
+                                    Земельный участок для индивидуального жилищного строительства, кадастровый №
+                                    31:15:0204011:29
+                                </p>
+                                <div class="card__info">
+                                    Имущество организаций и ИП • Аукцион
+                                </div>
+                            </div>
+
+                            <!-- card real estate-->
+                            <div class="card card--best-price catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card2-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-time-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        <span class="card__time-number">59</span> дней до подачи заявки
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--up">
+                                        306 000 ₽
+                                    </p>
+                                    <p class="card__subprice">
+                                        250 000 000 ₽
+                                    </p>
+                                </div>
+                                <p class="card__description">
+                                    Земельный участок для индивидуального жилищного строительства, кадастровый №
+                                    31:15:0204011:29
+                                </p>
+                                <div class="card__info">
+                                    Имущество организаций и ИП • Аукцион
+                                </div>
+                            </div>
+
                         </div>
-                        <p class="card__description">
-                            Земельный участок для индивидуального жилищного строительства, кадастровый №
-                            31:15:0204011:29
-                        </p>
-                        <div class="card__info">
-                            Имущество организаций и ИП • Аукцион
+
+                        <div class="catalog__main-category-content-block" data-blockNumber="3">
+
+                            <!-- card real estate-->
+                            <div class="card card--best-price catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card2-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-time-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        <span class="card__time-number">59</span> дней до подачи заявки
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--up">
+                                        306 000 ₽
+                                    </p>
+                                    <p class="card__subprice">
+                                        250 000 000 ₽
+                                    </p>
+                                </div>
+                                <p class="card__description">
+                                    Земельный участок для индивидуального жилищного строительства, кадастровый №
+                                    31:15:0204011:29
+                                </p>
+                                <div class="card__info">
+                                    Имущество организаций и ИП • Аукцион
+                                </div>
+                            </div>
+
+
+                            <!-- card real estate-->
+                            <div class="card card--best-price catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card2-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-time-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        <span class="card__time-number">59</span> дней до подачи заявки
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--up">
+                                        306 000 ₽
+                                    </p>
+                                    <p class="card__subprice">
+                                        250 000 000 ₽
+                                    </p>
+                                </div>
+                                <p class="card__description">
+                                    Земельный участок для индивидуального жилищного строительства, кадастровый №
+                                    31:15:0204011:29
+                                </p>
+                                <div class="card__info">
+                                    Имущество организаций и ИП • Аукцион
+                                </div>
+                            </div>
+
+
+                            <!-- card real estate-->
+                            <div class="card card--best-price catalog__card">
+                                <button class="card__like-btn" type="button">
+                                    <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                        height="14px" alt="like">
+                                </button>
+                                <img class="card__img" src="assets/img/card2-img.png" alt="photo" width="275px"
+                                    height="205px">
+                                <div class="card__time-wrapper">
+                                    <img class="card__time-img" src="assets/img/svg/card-time-img.svg"
+                                        alt="time-circle">
+                                    <p class="card__time-text">
+                                        <span class="card__time-number">59</span> дней до подачи заявки
+                                    </p>
+                                </div>
+                                <div class="card__price-wrapper">
+                                    <p class="card__price card__price--up">
+                                        306 000 ₽
+                                    </p>
+                                    <p class="card__subprice">
+                                        250 000 000 ₽
+                                    </p>
+                                </div>
+                                <p class="card__description">
+                                    Земельный участок для индивидуального жилищного строительства, кадастровый №
+                                    31:15:0204011:29
+                                </p>
+                                <div class="card__info">
+                                    Имущество организаций и ИП • Аукцион
+                                </div>
+                            </div>
+
                         </div>
+
                     </div>
 
-                    <!-- card -->
-                    <div class="card card--sold catalog__card">
-                        <button class="card__like-btn" type="button">
-                            <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
-                                height="14px" alt="like">
-                        </button>
-                        <img class="card__img" src="assets/img/card3-img.png" alt="photo" width="275px" height="205px">
-                        <div class="card__time-wrapper">
-                            <img class="card__time-img" src="assets/img/svg/card-fulltime-img.svg" alt="time-circle">
-                            <p class="card__time-text">
-                                Торги окончены
-                            </p>
-                        </div>
-                        <div class="card__price-wrapper">
-                            <p class="card__price card__price--sold">
-                                Продано
-                            </p>
-                        </div>
-                        <p class="card__description card__description--sold">
-                            Автомобиль MITSUBISHI, модель
-                        </p>
-                        <div class="card__info">
-                            Банкротные торги
-                        </div>
-                    </div>
+                    <!-- category-content -->
+                    <div class="catalog__main-category-content" data-categoryNumber="3"></div>
 
-                    <!-- card -->
-                    <div class="card catalog__card">
-                        <button class="card__like-btn" type="button">
-                            <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
-                                height="14px" alt="like">
-                        </button>
-                        <img class="card__img" src="assets/img/card-img-default.png" alt="photo" width="275px"
-                            height="205px">
-                        <div class="card__time-wrapper">
-                            <img class="card__time-img" src="assets/img/svg/card-time-img.svg" alt="time-circle">
-                            <p class="card__time-text">
-                                <span class="card__time-number">59</span> дней до подачи заявки
-                            </p>
-                        </div>
-                        <div class="card__price-wrapper">
-                            <p class="card__price card__price--down">
-                                900 000 ₽
-                            </p>
-                            <p class="card__subprice">
-                                250 000 000 ₽
-                            </p>
-                        </div>
-                        <p class="card__description">
-                            Торги по реализации имущества Шелевестера Максима Валерьевича: Транспортное средство Марка,
-                            модель - INFINIT...
-                        </p>
-                        <div class="card__info">
-                            Банкротные имущество • Аукцион
-                        </div>
-                    </div>
-
-                    <!-- card -->
-                    <div class="card catalog__card">
-                        <button class="card__like-btn" type="button">
-                            <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
-                                height="14px" alt="like">
-                        </button>
-                        <img class="card__img" src="assets/img/card-img-default.png" alt="photo" width="275px"
-                            height="205px">
-                        <div class="card__time-wrapper">
-                            <img class="card__time-img" src="assets/img/svg/card-time-img.svg" alt="time-circle">
-                            <p class="card__time-text">
-                                <span class="card__time-number">59</span> дней до подачи заявки
-                            </p>
-                        </div>
-                        <div class="card__price-wrapper">
-                            <p class="card__price card__price--down">
-                                900 000 ₽
-                            </p>
-                            <p class="card__subprice">
-                                250 000 000 ₽
-                            </p>
-                        </div>
-                        <p class="card__description">
-                            Торги по реализации имущества Шелевестера Максима Валерьевича: Транспортное средство Марка,
-                            модель - INFINIT...
-                        </p>
-                        <div class="card__info">
-                            Банкротные имущество • Аукцион
-                        </div>
-                    </div>
-
-                    <!-- card -->
-                    <div class="card card--promo catalog__card">
-                        <a class="card-link--promo" href="#">
-                            <img class="card-img--promo" src="assets/img/card--promo.png" alt="more than 500 thousand"
-                                width="275px" height="350px">
-                        </a>
-                    </div>
-
-                    <!-- card -->
-                    <div class="card catalog__card">
-                        <button class="card__like-btn" type="button">
-                            <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
-                                height="14px" alt="like">
-                        </button>
-                        <img class="card__img" src="assets/img/card-img-default.png" alt="photo" width="275px"
-                            height="205px">
-                        <div class="card__time-wrapper">
-                            <img class="card__time-img" src="assets/img/svg/card-time-img.svg" alt="time-circle">
-                            <p class="card__time-text">
-                                <span class="card__time-number">59</span> дней до подачи заявки
-                            </p>
-                        </div>
-                        <div class="card__price-wrapper">
-                            <p class="card__price card__price--down">
-                                900 000 ₽
-                            </p>
-                            <p class="card__subprice">
-                                250 000 000 ₽
-                            </p>
-                        </div>
-                        <p class="card__description">
-                            Торги по реализации имущества Шелевестера Максима Валерьевича: Транспортное средство Марка,
-                            модель - INFINIT...
-                        </p>
-                        <div class="card__info">
-                            Банкротные имущество • Аукцион
-                        </div>
-                    </div>
-
-                    <!-- card -->
-                    <div class="card catalog__card">
-                        <button class="card__like-btn" type="button">
-                            <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
-                                height="14px" alt="like">
-                        </button>
-                        <img class="card__img" src="assets/img/card-img-default.png" alt="photo" width="275px"
-                            height="205px">
-                        <div class="card__time-wrapper">
-                            <img class="card__time-img" src="assets/img/svg/card-time-img.svg" alt="time-circle">
-                            <p class="card__time-text">
-                                <span class="card__time-number">59</span> дней до подачи заявки
-                            </p>
-                        </div>
-                        <div class="card__price-wrapper">
-                            <p class="card__price card__price--down">
-                                900 000 ₽
-                            </p>
-                            <p class="card__subprice">
-                                250 000 000 ₽
-                            </p>
-                        </div>
-                        <p class="card__description">
-                            Торги по реализации имущества Шелевестера Максима Валерьевича: Транспортное средство Марка,
-                            модель - INFINIT...
-                        </p>
-                        <div class="card__info">
-                            Банкротные имущество • Аукцион
-                        </div>
-                    </div>
-
-                    <!-- card -->
-                    <div class="card catalog__card">
-                        <button class="card__like-btn" type="button">
-                            <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
-                                height="14px" alt="like">
-                        </button>
-                        <img class="card__img" src="assets/img/card-img-default.png" alt="photo" width="275px"
-                            height="205px">
-                        <div class="card__time-wrapper">
-                            <img class="card__time-img" src="assets/img/svg/card-time-img.svg" alt="time-circle">
-                            <p class="card__time-text">
-                                <span class="card__time-number">59</span> дней до подачи заявки
-                            </p>
-                        </div>
-                        <div class="card__price-wrapper">
-                            <p class="card__price card__price--down">
-                                900 000 ₽
-                            </p>
-                            <p class="card__subprice">
-                                250 000 000 ₽
-                            </p>
-                        </div>
-                        <p class="card__description">
-                            Торги по реализации имущества Шелевестера Максима Валерьевича: Транспортное средство Марка,
-                            модель - INFINIT...
-                        </p>
-                        <div class="card__info">
-                            Банкротные имущество • Аукцион
-                        </div>
-                    </div>
-
-            
-                    <!-- buttons -->
-                    <div class="catalog__main-buttons">
-
-                        <button class="catalog__btn-left" type="button">
-                            <img class="catalog__btn-left-img" src="assets/img/svg/catalog__btn-left.svg" alt="left"
-                                width="64px" height="64px">
-                        </button>
-
-                        <button class="catalog__btn-change" type="button">
-                            <img class="catalog__btn-change-img" src="assets/img/svg/catalog__btn-change.svg"
-                                alt="change" width="83px" height="83px">
-                        </button>
-
-                        <button class="catalog__btn-right" type="button">
-                            <img class="catalog__btn-right-img" src="assets/img/svg/catalog__btn-right.svg" alt="right"
-                                width="64px" height="64px">
-                        </button>
+                    <!-- category-content -->
+                    <div class="catalog__main-category-content" data-categoryNumber="4">
 
                     </div>
+
+                    <!-- category-content -->
+                    <div class="catalog__main-category-content" data-categoryNumber="5">
+
+                    </div>
+
+                    <!-- category-content -->
+                    <div class="catalog__main-category-content" data-categoryNumber="6">
+
+                    </div>
+
+                    <!-- category-content -->
+                    <div class="catalog__main-category-content" data-categoryNumber="7">
+
+                    </div>
+                    <!-- category-content -->
+                    <div class="catalog__main-category-content" data-categoryNumber="8">
+
+                    </div>
+
+                    <div class="catalog__main-all-cards-category">
+
+                        <!-- card -->
+                        <div class="card card--new catalog__card">
+                            <button class="card__like-btn" type="button">
+                                <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                    height="14px" alt="like">
+                            </button>
+                            <img class="card__img" src="assets/img/card-img-default.png" alt="photo" width="275px"
+                                height="205px">
+                            <div class="card__time-wrapper">
+                                <img class="card__time-img" src="assets/img/svg/card-time-img.svg" alt="time-circle">
+                                <p class="card__time-text">
+                                    <span class="card__time-number">59</span> дней до подачи заявки
+                                </p>
+                            </div>
+                            <div class="card__price-wrapper">
+                                <p class="card__price card__price--down">
+                                    900 000 ₽
+                                </p>
+                                <p class="card__subprice">
+                                    250 000 000 ₽
+                                </p>
+                            </div>
+                            <p class="card__description">
+                                Торги по реализации имущества Шелевестера Максима Валерьевича: Транспортное средство
+                                Марка,
+                                модель - INFINIT...
+                            </p>
+                            <div class="card__info">
+                                Банкротные имущество • Аукцион
+                            </div>
+                        </div>
+
+                        <!-- card -->
+                        <div class="card card--best-price catalog__card">
+                            <button class="card__like-btn" type="button">
+                                <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                    height="14px" alt="like">
+                            </button>
+                            <img class="card__img" src="assets/img/card2-img.png" alt="photo" width="275px"
+                                height="205px">
+                            <div class="card__time-wrapper">
+                                <img class="card__time-img" src="assets/img/svg/card-time-img.svg" alt="time-circle">
+                                <p class="card__time-text">
+                                    <span class="card__time-number">59</span> дней до подачи заявки
+                                </p>
+                            </div>
+                            <div class="card__price-wrapper">
+                                <p class="card__price card__price--up">
+                                    306 000 ₽
+                                </p>
+                                <p class="card__subprice">
+                                    250 000 000 ₽
+                                </p>
+                            </div>
+                            <p class="card__description">
+                                Земельный участок для индивидуального жилищного строительства, кадастровый №
+                                31:15:0204011:29
+                            </p>
+                            <div class="card__info">
+                                Имущество организаций и ИП • Аукцион
+                            </div>
+                        </div>
+
+                        <!-- card -->
+                        <div class="card card--sold catalog__card">
+                            <button class="card__like-btn" type="button">
+                                <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                    height="14px" alt="like">
+                            </button>
+                            <img class="card__img" src="assets/img/card3-img.png" alt="photo" width="275px"
+                                height="205px">
+                            <div class="card__time-wrapper">
+                                <img class="card__time-img" src="assets/img/svg/card-fulltime-img.svg"
+                                    alt="time-circle">
+                                <p class="card__time-text">
+                                    Торги окончены
+                                </p>
+                            </div>
+                            <div class="card__price-wrapper">
+                                <p class="card__price card__price--sold">
+                                    Продано
+                                </p>
+                            </div>
+                            <p class="card__description card__description--sold">
+                                Автомобиль MITSUBISHI, модель
+                            </p>
+                            <div class="card__info">
+                                Банкротные торги
+                            </div>
+                        </div>
+
+                        <!-- card -->
+                        <div class="card catalog__card">
+                            <button class="card__like-btn" type="button">
+                                <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                    height="14px" alt="like">
+                            </button>
+                            <img class="card__img" src="assets/img/card-img-default.png" alt="photo" width="275px"
+                                height="205px">
+                            <div class="card__time-wrapper">
+                                <img class="card__time-img" src="assets/img/svg/card-time-img.svg" alt="time-circle">
+                                <p class="card__time-text">
+                                    <span class="card__time-number">59</span> дней до подачи заявки
+                                </p>
+                            </div>
+                            <div class="card__price-wrapper">
+                                <p class="card__price card__price--down">
+                                    900 000 ₽
+                                </p>
+                                <p class="card__subprice">
+                                    250 000 000 ₽
+                                </p>
+                            </div>
+                            <p class="card__description">
+                                Торги по реализации имущества Шелевестера Максима Валерьевича: Транспортное средство
+                                Марка,
+                                модель - INFINIT...
+                            </p>
+                            <div class="card__info">
+                                Банкротные имущество • Аукцион
+                            </div>
+                        </div>
+
+                        <!-- card -->
+                        <div class="card catalog__card">
+                            <button class="card__like-btn" type="button">
+                                <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                    height="14px" alt="like">
+                            </button>
+                            <img class="card__img" src="assets/img/card-img-default.png" alt="photo" width="275px"
+                                height="205px">
+                            <div class="card__time-wrapper">
+                                <img class="card__time-img" src="assets/img/svg/card-time-img.svg" alt="time-circle">
+                                <p class="card__time-text">
+                                    <span class="card__time-number">59</span> дней до подачи заявки
+                                </p>
+                            </div>
+                            <div class="card__price-wrapper">
+                                <p class="card__price card__price--down">
+                                    900 000 ₽
+                                </p>
+                                <p class="card__subprice">
+                                    250 000 000 ₽
+                                </p>
+                            </div>
+                            <p class="card__description">
+                                Торги по реализации имущества Шелевестера Максима Валерьевича: Транспортное средство
+                                Марка,
+                                модель - INFINIT...
+                            </p>
+                            <div class="card__info">
+                                Банкротные имущество • Аукцион
+                            </div>
+                        </div>
+
+                        <!-- card -->
+                        <div class="card card--promo catalog__card">
+                            <a class="card-link--promo" href="#">
+                                <img class="card-img--promo" src="assets/img/card--promo.png"
+                                    alt="more than 500 thousand" width="275px" height="350px">
+                            </a>
+                        </div>
+
+                        <!-- card -->
+                        <div class="card catalog__card">
+                            <button class="card__like-btn" type="button">
+                                <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                    height="14px" alt="like">
+                            </button>
+                            <img class="card__img" src="assets/img/card-img-default.png" alt="photo" width="275px"
+                                height="205px">
+                            <div class="card__time-wrapper">
+                                <img class="card__time-img" src="assets/img/svg/card-time-img.svg" alt="time-circle">
+                                <p class="card__time-text">
+                                    <span class="card__time-number">59</span> дней до подачи заявки
+                                </p>
+                            </div>
+                            <div class="card__price-wrapper">
+                                <p class="card__price card__price--down">
+                                    900 000 ₽
+                                </p>
+                                <p class="card__subprice">
+                                    250 000 000 ₽
+                                </p>
+                            </div>
+                            <p class="card__description">
+                                Торги по реализации имущества Шелевестера Максима Валерьевича: Транспортное средство
+                                Марка,
+                                модель - INFINIT...
+                            </p>
+                            <div class="card__info">
+                                Банкротные имущество • Аукцион
+                            </div>
+                        </div>
+
+                        <!-- card -->
+                        <div class="card catalog__card">
+                            <button class="card__like-btn" type="button">
+                                <img class="card__like-btn-img" src="assets/img/svg/card-like.svg" width="17px"
+                                    height="14px" alt="like">
+                            </button>
+                            <img class="card__img" src="assets/img/card-img-default.png" alt="photo" width="275px"
+                                height="205px">
+                            <div class="card__time-wrapper">
+                                <img class="card__time-img" src="assets/img/svg/card-time-img.svg" alt="time-circle">
+                                <p class="card__time-text">
+                                    <span class="card__time-number">59</span> дней до подачи заявки
+                                </p>
+                            </div>
+                            <div class="card__price-wrapper">
+                                <p class="card__price card__price--down">
+                                    900 000 ₽
+                                </p>
+                                <p class="card__subprice">
+                                    250 000 000 ₽
+                                </p>
+                            </div>
+                            <p class="card__description">
+                                Торги по реализации имущества Шелевестера Максима Валерьевича: Транспортное средство
+                                Марка,
+                                модель - INFINIT...
+                            </p>
+                            <div class="card__info">
+                                Банкротные имущество • Аукцион
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- buttons -->
+                <div class="catalog__buttons">
+
+                    <button class="catalog__btn-left" id="catalogPrevBtn" type="button">
+                        <img class="catalog__btn-left-img" src="assets/img/svg/catalog__btn-left.svg" alt="left"
+                            width="64px" height="64px">
+                    </button>
+
+                    <button class="catalog__btn-right" id="catalogNextBtn" type="button">
+                        <img class="catalog__btn-right-img" src="assets/img/svg/catalog__btn-right.svg" alt="right"
+                            width="64px" height="64px">
+                    </button>
+
+                    <button class="catalog__btn-change" type="button" disabled>
+                        <img class="catalog__btn-change-img" src="assets/img/svg/catalog__btn-change.svg" alt="change"
+                            width="75px" height="75px">
+                    </button>
 
                 </div>
 
@@ -1447,6 +2570,7 @@
             </div>
             </div>
         </section>
+        
     </main>
     <script src="js/script.js"></script>
 </body>
