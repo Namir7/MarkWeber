@@ -74,7 +74,7 @@ function slider1() {
   });
 
   //  automatic switcher
-  // switcher();
+  switcher();
 
   function switcher() {
     let timerId = setInterval(() => {
