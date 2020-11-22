@@ -210,7 +210,7 @@ function slider3() {
 
 //variety
 
-//open and close HTML variety's section menu(HTML:line 564)
+//open and close HTML variety's section menu
 function variety() {
   const variantsForm = document.querySelector("#variantsForm");
   const hightLevelBtns = variantsForm.querySelectorAll("#hightLevelBtn");
@@ -485,14 +485,4 @@ function catalog() {
         categoriesBtn.setAttribute("disabled", "disabled");
     });
   }
-}
-
-
-window.addEventListener("click", () => {
-  console.log(`innerWidth:`);
-  console.log(window.innerWidth);
-});
-
-if (window.innerWidth <= 1450 ) {
-  // document.querySelector('body').setAttribute('style', `width: ${window.innerWidth}px; overflow-x: hidden`) ;
 }
