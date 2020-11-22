@@ -19,8 +19,10 @@ function slider1() {
   let counter1 = 1;
 
   //  size
-  const initialTranslate1 = 150;
-  // const initialTranslate1 = 180;
+  
+  const initialTranslate1 = window.innerWidth >= 1680 ? 150 :(window.innerWidth / 2 - 690);
+  console.log(initialTranslate1);
+  // const initialTranslate1 = 150;
   const width1 = slider1Items[0].clientWidth;
   const marginRight1 = Number.parseFloat(
     window
@@ -291,7 +293,6 @@ function catalog() {
   });
 
   catalog.addEventListener("changeActive", (event) => {
-    console.log(`catalog Listener: active category changed`);
     // smoothScroll();
 
     setAndRemoveActiveAttributeToIcons();
@@ -390,8 +391,6 @@ function catalog() {
   );
 
   catalog.addEventListener("changeActiveCategoryBlock", (event) => {
-    console.log(`catalog Listener: active block changed`);
-
     //    display current block
     // hide prev block
 
@@ -448,7 +447,6 @@ function catalog() {
       changeActiveCategoryBlock.detail.currentBlock.nextElementSibling;
 
     catalog.dispatchEvent(changeActiveCategoryBlock);
-    // console.log(changeActiveCategoryBlock.detail.currentBlock);
   });
 
   catalogPrevBtn.addEventListener("click", (event) => {
@@ -457,7 +455,6 @@ function catalog() {
       changeActiveCategoryBlock.detail.currentBlock.previousElementSibling;
 
     catalog.dispatchEvent(changeActiveCategoryBlock);
-    // console.log(changeActiveCategoryBlock.detail.currentBlock);
   });
 
   //initial changes
@@ -486,7 +483,16 @@ function catalog() {
       );
       if (categoryElement.children.length === 0)
         categoriesBtn.setAttribute("disabled", "disabled");
-      console.log(categoriesBtn);
     });
   }
+}
+
+
+window.addEventListener("click", () => {
+  console.log(`innerWidth:`);
+  console.log(window.innerWidth);
+});
+
+if (window.innerWidth <= 1450 ) {
+  // document.querySelector('body').setAttribute('style', `width: ${window.innerWidth}px; overflow-x: hidden`) ;
 }

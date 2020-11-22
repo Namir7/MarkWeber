@@ -758,9 +758,20 @@ button {
   border: none;
   background-color: white;
   padding: 0;
+  line-height: 0;
   width: fit-content;
   height: fit-content;
+  border-radius: 50%;
   position: absolute;
+  transition: border 500ms ease-in-out 100ms;
+}
+
+.catalog__btn-left:hover, .catalog__btn-right:hover, .catalog__btn-change:hover {
+  border: 3px solid goldenrod;
+}
+
+.catalog__btn:disabled:hover {
+  border: none;
 }
 
 .catalog__btn-right {
@@ -768,12 +779,9 @@ button {
   right: 5.654%;
 }
 
-.catalog__btn-right:hover {
-  top: 39%;
-}
-
-.catalog__btn-right:disabled:hover {
-  top: 40%;
+.catalog__btn-right-img {
+  width: 64px;
+  height: 64px;
 }
 
 .catalog__btn-left {
@@ -781,12 +789,9 @@ button {
   left: 5.654%;
 }
 
-.catalog__btn-left:hover {
-  top: 39%;
-}
-
-.catalog__btn-left:disabled:hover {
-  top: 40%;
+.catalog__btn-left-img {
+  width: 64px;
+  height: 64px;
 }
 
 .catalog__btn-change {
@@ -794,8 +799,9 @@ button {
   right: 4.464%;
 }
 
-.catalog__btn-change:hover {
-  top: -750px;
+.catalog__btn-change-img {
+  width: 75px;
+  height: 75px;
 }
 
 .catalog__go-to {
@@ -944,7 +950,7 @@ button {
   transform: translateX(-5px);
 }
 
-.variety__variants-hight-level-btn:focus:hover {
+.variety__variants-hight-level-btn:checked:hover {
   transform: none;
 }
 
@@ -1046,6 +1052,61 @@ button {
 }
 
 /* Large desktops and laptops */
+@media (max-width: 1680px) {
+  .menu__logo {
+    background-color: aquamarine;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  body {
+    overflow-x: auto;
+  }
+  .container {
+    width: 1420px;
+  }
+  .menu__logo {
+    background-color: green;
+  }
+  .promo-wrapper {
+    width: inherit;
+  }
+  .categories-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .catalog__main-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .catalog__btn-right {
+    top: 86%;
+    right: 33%;
+  }
+  .catalog__btn-left {
+    top: 86%;
+    left: 33%;
+  }
+  .catalog__btn-change {
+    top: 2%;
+    left: 1.646%;
+  }
+  .catalog__btn-left-img, .catalog__btn-right-img, .catalog__btn-change-img {
+    width: 50px;
+    height: 50px;
+  }
+  .content {
+    margin: 0 auto;
+  }
+  .variety-wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
 /* Landscape tablets and medium desktops */
 /* Portrait tablets and small desktops */
 /* Landscape phones and portrait tablets */
